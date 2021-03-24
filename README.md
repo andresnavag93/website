@@ -1,17 +1,28 @@
 <p align="center">
-  <a href="https://platzi.com/cursos/next-2020/" target="_blank">
-    <img alt="Curso de Next.js" src="https://static.platzi.com/media/achievements/badge-nextjs-2259fc68-f86b-486e-bc09-95311a887985.png" width="60" />
-  </a>
+  <img alt="Curso de Next.js" src="https://static.platzi.com/media/achievements/badge-nextjs-2259fc68-f86b-486e-bc09-95311a887985.png" width="60" />
 </p>
 <h1 align="center">
-  Proyecto del Curso: Avocado-Ecommerce (Next.js)
+  Andres Navarro Portfolio
 </h1>
+
 <p align="center">
-  <a href="https://avocado-ecommerce.vercel.app/" target="_blank">
+  <a href="https://andresnavag93.vercel.app/" target="_blank">
     https://andresnavag93.vercel.app/
   </a>
 </p>
 
-## Agradecimientos:
+### Technologies / Tools
 
-- [Curso de Next.js](https://platzi.com/cursos/next-2020/) de [Platzi](https://platzi.com)
+- Next.Js
+
+### System requirements
+
+- node ^v12.18.3
+- npm ^6.14.6
+
+### Run the project locally
+
+- `npm run install`
+- `npm run dev`
+
+##### Developed by: Andres Navarro
