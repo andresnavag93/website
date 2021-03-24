@@ -14,30 +14,30 @@ const Footer = () => (
   >
     <Container text>
       <Grid stackable>
-        <Grid.Row>
-          <Grid.Column width={4}>
-            <Header as="h4" content="Nosotros" />
-            <List>
-              <List.Item>
+        <Grid.Row style={{ textAlign: 'center' }}>
+          {/* <Grid.Column width={5}>
+            <Header as="h4" content="About me" />
+            <List >
+              <List.Item >
                 <Link href="/about">
-                  <a>Conoce más</a>
+                  <a>About me</a>
                 </Link>
               </List.Item>
             </List>
-          </Grid.Column>
-          <Grid.Column width={5}>
-            <Header as="h4" content="Servicios" />
+          </Grid.Column> */}
+          {/* <Grid.Column width={8}>
+            <Header as="h4" content="Portfolio" />
             <List>
               <List.Item>
                 <Link href="/">
-                  <a>Todos los productos</a>
+                  <a>Portfolio</a>
                 </Link>
               </List.Item>
             </List>
-          </Grid.Column>
-          <Grid.Column width={7}>
-            <Header as="h4">Agradecimientos a </Header>
-            <p>
+          </Grid.Column> */}
+          <Grid.Column width={16}>
+            {/* <Header as="h4">Links</Header> */}
+            {/* <p>
               <a href="https://platzi.com/" target="_blank">
                 Platzi y su curso de Next.JS
               </a>{' '}
@@ -45,27 +45,28 @@ const Footer = () => (
               <a href="https://twitter.com/jonalvarezz" target="_blank">
                 @jonalvarezz
               </a>
-            </p>
-            {/* <List horizontal style={{ display: 'flex' }}>
-              <List.Item
+            </p> */}
+            {/* <List horizontal style={{ display: 'flex' }}> */}
+            <List horizontal>
+              {/* <List.Item
                 icon="twitter"
                 style={{ display: 'flex' }}
-                content={<a href="https://twitter.com/jonalvarezz">Twitter</a>}
-              />
+                content={<a href="https://twitter.com/andresnavag93">Twitter</a>}
+              /> */}
               <List.Item
                 icon="github"
                 style={{ display: 'flex' }}
                 content={
-                  <a href="https://github.com/jonalvarezz/platzi-nextjs">
+                  <a href="https://github.com/andresnavag93" target="_blank">
                     GitHub
                   </a>
                 }
               />
-            </List> */}
+            </List>
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <div className="colophon">
+      {/* <div className="colophon">
         <p className="colophon-entry">
           Icons made by{' '}
           <a
@@ -99,7 +100,7 @@ const Footer = () => (
             California Avocado
           </a>
         </p>
-      </div>
+      </div> */}
     </Container>
 
     <style jsx>{`

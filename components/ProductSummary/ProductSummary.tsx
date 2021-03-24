@@ -19,11 +19,11 @@ const ProductSummary = ({ product }: ProductSummaryProps) => (
           <Item.Header as="h1">{product.name}</Item.Header>
           <Item.Description>
             <p>{product.price}</p>
-            <Label>{`SKU: ${product.sku}`}</Label>
+            {/* <Label>{`SKU: ${product.sku}`}</Label> */}
           </Item.Description>
-          <Item.Extra>
+          {/* <Item.Extra>
             <AddToCart product={product} />
-          </Item.Extra>
+          </Item.Extra> */}
         </Item.Content>
       </Item>
     </Item.Group>

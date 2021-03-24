@@ -8,11 +8,10 @@
 </h1>
 <p align="center">
   <a href="https://avocado-ecommerce.vercel.app/" target="_blank">
-    https://avocado-ecommerce.vercel.app/
+    https://andresnavag93.vercel.app/
   </a>
 </p>
 
 ## Agradecimientos:
 
 - [Curso de Next.js](https://platzi.com/cursos/next-2020/) de [Platzi](https://platzi.com)
-- Dictado por [@jonalvarezz](https://twitter.com/jonalvarezz)

@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { Image, Header } from 'semantic-ui-react'
 import { GetStaticProps } from 'next'
 import fetch from 'isomorphic-unfetch'
 import Layout from '@components/Layout/Layout'
@@ -20,12 +21,15 @@ export const getStaticProps: GetStaticProps = async () => {
 const HomePage = ({ productList }: { productList: TProduct[] }) => {
   return (
     <Layout>
-      <KawaiiHeader />
-      <section>
+      {/* <KawaiiHeader /> */}
+      <Header as="h1" textAlign="center" style={{ margin: '3rem' }}>
+        Portfolio
+      </Header>
+      {/* <section>
         <Link href="/yes-or-no">
           <a>¿Deberia comer un avo hoy?</a>
         </Link>
-      </section>
+      </section> */}
       <ProductList products={productList} />
       <style jsx>{`
         section {

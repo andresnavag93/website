@@ -19,17 +19,24 @@ const Navbar = () => {
             active={pathname === '/'}
             title="Inicio | Todos los productos"
           >
-            <Avocado />
-            Avo Store
+            {/* <Avocado /> */}
+            Portfolio
           </Menu.Item>
         </Link>
-        <Menu.Menu position="right">
+        {/* <Menu.Menu position="right">
           <Link href="/cart" passHref>
             <Menu.Item active={pathname === '/cart'}>
               <ShoppingCartIcon cartCount={cartCount} name="Canasta" />
             </Menu.Item>
           </Link>
-        </Menu.Menu>
+        </Menu.Menu> */}
+        {/* <Menu.Menu position="right">
+          <Link href="/about" passHref>
+            <Menu.Item active={pathname === '/about'}>
+              About me
+            </Menu.Item>
+          </Link>
+        </Menu.Menu> */}
       </Container>
       <style jsx global>{`
         .ui.menu.huge {

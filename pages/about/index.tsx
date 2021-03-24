@@ -34,12 +34,12 @@ const AboutPage = () => {
   return (
     <Layout>
       <section>
-        <Header as="h1" textAlign="center">
-          13 Surprising Facts About Avocados
+        <Header as="h1" textAlign="center" style={{ margin: '3rem' }}>
+          Sobre mí
         </Header>
         <figure>
           <Image src="/images/avocados.jpg" alt="Avocados on a table" />
-          <figcaption>
+          {/* <figcaption>
             Originally from{' '}
             <a
               target="_blank"
@@ -47,16 +47,16 @@ const AboutPage = () => {
             >
               Taste of Home
             </a>
-          </figcaption>
+          </figcaption> */}
         </figure>
-        <ol>
+        {/* <ol>
           {avoFacts.map(({ title, content }) => (
             <li key={title}>
               <h3 className="ui header">{title}</h3>
               <p>{content}</p>
             </li>
           ))}
-        </ol>
+        </ol> */}
       </section>
 
       <style jsx>{`
