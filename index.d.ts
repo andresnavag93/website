@@ -23,6 +23,8 @@ type TProduct = {
   price: number
   image: Url
   attributes: TProductAttributes
+  subtitle: string
+  date: string
 }
 
 type TAPIAVODetailResponse = TProduct

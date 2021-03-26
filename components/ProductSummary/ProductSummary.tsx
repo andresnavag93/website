@@ -11,14 +11,14 @@ type ProductSummaryProps = {
 const ProductSummary = ({ product }: ProductSummaryProps) => (
   <>
     <Item.Group as="section">
-      <Item style={{ alignItems: 'center' }}>
+      <Item style={{ alignItems: 'center', marginTop: '3rem' }}>
         <Item.Image size="medium">
           <img src={product.image} alt={product.name} />
         </Item.Image>
         <Item.Content>
           <Item.Header as="h1">{product.name}</Item.Header>
           <Item.Description>
-            <p>{product.price}</p>
+            {/* <p>{product.price}</p> */}
             {/* <Label>{`SKU: ${product.sku}`}</Label> */}
           </Item.Description>
           {/* <Item.Extra>

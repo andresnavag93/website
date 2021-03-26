@@ -6,7 +6,9 @@ const ProductAttributes = ({
   ...otherAttributes
 }: TProductAttributes) => (
   <section className="container">
-    <Header as="h3">About this avocado</Header>
+    <Header as="h3" style={{ marginTop: '3rem' }}>
+      About this project
+    </Header>
     <p>{description}</p>
 
     <Divider />

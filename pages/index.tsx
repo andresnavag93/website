@@ -8,7 +8,8 @@ import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader'
 import ProductList from '@components/ProductList/ProductList'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await fetch('https://avocado-ecommerce.vercel.app/api/avo')
+  const response = await fetch('http://localhost:3000/api/avo')
+  // const response = await fetch('https://avocado-ecommerce.vercel.app/api/avo')
   const { data: productList }: TAPIAvoResponse = await response.json()
 
   return {
@@ -23,7 +24,7 @@ const HomePage = ({ productList }: { productList: TProduct[] }) => {
     <Layout>
       {/* <KawaiiHeader /> */}
       <Header as="h1" textAlign="center" style={{ margin: '3rem' }}>
-        Portfolio
+        Andres Navarro <br /> Portfolio
       </Header>
       {/* <section>
         <Link href="/yes-or-no">
