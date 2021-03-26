@@ -7,30 +7,30 @@ type Json =
   | { [property: string]: Json }
   | Json[]
 
-type TProductId = string
+type TProjectId = string
 
-type TProductAttributes = {
+type TProjectAttributes = {
   description: string
   shape: string
   hardiness: string
   taste: string
 }
 
-type TProduct = {
-  id: TProductId
+type TProject = {
+  id: TProjectId
   name: string
   sku: string
   price: number
   image: Url
-  attributes: TProductAttributes
+  attributes: TProjectAttributes
   subtitle: string
   date: string
 }
 
-type TAPIAVODetailResponse = TProduct
+type TAPIPROJECTDetailResponse = TProject
 
-type TAPIAvoResponse = {
+type TAPIProjectResponse = {
   lenght: number
-  data: TProduct[]
+  data: TProject[]
   error?: string
 }

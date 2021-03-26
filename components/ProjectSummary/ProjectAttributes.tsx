@@ -1,10 +1,10 @@
 import React from 'react'
 import { Header, Divider, Table } from 'semantic-ui-react'
 
-const ProductAttributes = ({
+const ProjectAttributes = ({
   description,
   ...otherAttributes
-}: TProductAttributes) => (
+}: TProjectAttributes) => (
   <section className="container">
     <Header as="h3" style={{ marginTop: '3rem' }}>
       About this project
@@ -40,4 +40,4 @@ const ProductAttributes = ({
   </section>
 )
 
-export default ProductAttributes
+export default ProjectAttributes

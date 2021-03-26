@@ -5,21 +5,21 @@ import { GetStaticProps } from 'next'
 import fetch from 'isomorphic-unfetch'
 import Layout from '@components/Layout/Layout'
 import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader'
-import ProductList from '@components/ProductList/ProductList'
+import ProjectList from '@components/ProjectList/ProjectList'
 
 export const getStaticProps: GetStaticProps = async () => {
   const response = await fetch('http://localhost:3000/api/avo')
-  // const response = await fetch('https://avocado-ecommerce.vercel.app/api/avo')
-  const { data: productList }: TAPIAvoResponse = await response.json()
+  // const response = await fetch('https://andresnavag93.vercel.app/api/avo')
+  const { data: projectList }: TAPIProjectResponse = await response.json()
 
   return {
     props: {
-      productList,
+      projectList,
     },
   }
 }
 
-const HomePage = ({ productList }: { productList: TProduct[] }) => {
+const HomePage = ({ projectList }: { projectList: TProject[] }) => {
   return (
     <Layout>
       {/* <KawaiiHeader /> */}
@@ -28,10 +28,10 @@ const HomePage = ({ productList }: { productList: TProduct[] }) => {
       </Header>
       {/* <section>
         <Link href="/yes-or-no">
-          <a>¿Deberia comer un avo hoy?</a>
+          <a>¿Tendras un excelente dia hoy?</a>
         </Link>
       </section> */}
-      <ProductList products={productList} />
+      <ProjectList projects={projectList} />
       <style jsx>{`
         section {
           text-align: center;

@@ -2,13 +2,13 @@ import React from 'react'
 import { Card } from 'semantic-ui-react'
 import Link from 'next/link'
 
-type ProductListProps = {
-  products: TProduct[]
+type ProjectListProps = {
+  projects: TProject[]
 }
 
-const mapProductsToCards = (products: TProduct[]) =>
-  products.map(({ name, id, date, subtitle, image }) => (
-    <Link key={id} href="/product/[id]" as={`/product/${id}`} passHref>
+const mapProjectsToCards = (projects: TProject[]) =>
+  projects.map(({ name, id, date, subtitle, image }) => (
+    <Link key={id} href="/project/[id]" as={`/project/${id}`} passHref>
       <Card
         as="a"
         header={name}
@@ -23,10 +23,10 @@ const mapProductsToCards = (products: TProduct[]) =>
     </Link>
   ))
 
-const ProductList = ({ products }: ProductListProps) => (
+const ProjectList = ({ projects }: ProjectListProps) => (
   <Card.Group itemsPerRow={2} stackable>
-    {mapProductsToCards(products)}
+    {mapProjectsToCards(projects)}
   </Card.Group>
 )
 
-export default ProductList
+export default ProjectList
