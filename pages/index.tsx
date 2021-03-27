@@ -1,32 +1,34 @@
 import React from 'react'
 import Link from 'next/link'
+import { Image, Header } from 'semantic-ui-react'
 import { GetStaticProps } from 'next'
-import fetch from 'isomorphic-unfetch'
 import Layout from '@components/Layout/Layout'
 import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader'
-import ProductList from '@components/ProductList/ProductList'
+import ProjectList from '@components/ProjectList/ProjectList'
+import allData from '../database/data'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await fetch('https://avocado-ecommerce.vercel.app/api/avo')
-  const { data: productList }: TAPIAvoResponse = await response.json()
-
+  const projectList = Object.values(allData)
   return {
     props: {
-      productList,
+      projectList,
     },
   }
 }
 
-const HomePage = ({ productList }: { productList: TProduct[] }) => {
+const HomePage = ({ projectList }: { projectList: TProject[] }) => {
   return (
     <Layout>
-      <KawaiiHeader />
-      <section>
+      {/* <KawaiiHeader /> */}
+      <Header as="h1" textAlign="center" style={{ margin: '3rem' }}>
+        Andres Navarro <br /> Portfolio
+      </Header>
+      {/* <section>
         <Link href="/yes-or-no">
-          <a>¿Deberia comer un avo hoy?</a>
+          <a>¿Tendras un excelente dia hoy?</a>
         </Link>
-      </section>
-      <ProductList products={productList} />
+      </section> */}
+      <ProjectList projects={projectList} />
       <style jsx>{`
         section {
           text-align: center;

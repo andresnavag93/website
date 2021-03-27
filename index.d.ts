@@ -7,28 +7,71 @@ type Json =
   | { [property: string]: Json }
   | Json[]
 
-type TProductId = string
+type TProjectId = string
 
-type TProductAttributes = {
-  description: string
-  shape: string
-  hardiness: string
-  taste: string
+type TProjectLinks = {
+  github?: string
+  web?: string
+  demo?: string
+  demo2?: string
 }
 
-type TProduct = {
-  id: TProductId
+type TProjectAreaFeature = {
   name: string
-  sku: string
-  price: number
-  image: Url
-  attributes: TProductAttributes
+  color: SemanticCOLORS
 }
 
-type TAPIAVODetailResponse = TProduct
+type TProjectFeatures = {
+  description: string
+  area: TProjectAreaFeature
+  date: string
+  links: Array<Array<string>>
+  technologies: Array<string>
+  industry: string
+}
 
-type TAPIAvoResponse = {
+type TProject = {
+  id: TProjectId
+  title: string
+  subtitle: string
+  image: Url
+  features: TProjectFeatures
+}
+
+type TAPIPROJECTDetailResponse = TProject
+
+type TAPIProjectResponse = {
   lenght: number
-  data: TProduct[]
+  data: TProject[]
   error?: string
 }
+
+const sizes = [
+  'mini',
+  'tiny',
+  'small',
+  'medium',
+  'large',
+  'big',
+  'huge',
+  'massive',
+]
+
+const colors = [
+  'red',
+  'orange',
+  'yellow',
+  'olive',
+  'green',
+  'teal',
+  'blue',
+  'violet',
+  'purple',
+  'pink',
+  'brown',
+  'grey',
+  'black',
+]
+
+// <Label color="red" size="medium"> {features.area} </Label>
+// <Label as="a" href="https://react.semantic-ui.com/" target="_blank"> {features.date}</Label>
