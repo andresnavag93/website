@@ -36,7 +36,7 @@ const Footer = () => (
             </List>
           </Grid.Column> */}
           <Grid.Column width={16}>
-            {/* <Header as="h4">Links</Header> */}
+            {/* <Header as="h4">Other Links</Header> */}
             {/* <p>
               <a href="https://platzi.com/" target="_blank">
                 Platzi y su curso de Next.JS

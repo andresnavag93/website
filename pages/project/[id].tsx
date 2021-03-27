@@ -6,8 +6,8 @@ import ProjectSummary from '@components/ProjectSummary/ProjectSummary'
 import { GetStaticPaths, GetStaticProps } from 'next'
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const response = await fetch('http://localhost:3000/api/avo')
-  // const response = await fetch('https://andresnavag93.vercel.app/api/avo')
+  const response = await fetch('http://localhost:3000/api/project')
+  // const response = await fetch('https://andresnavag93.vercel.app/api/project')
   const { data }: TAPIProjectResponse = await response.json()
 
   const paths = data.map(({ id }) => ({ params: { id } }))
@@ -24,9 +24,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const response = await fetch(`http://localhost:3000/api/avo/${params?.id}`)
+  const response = await fetch(
+    `http://localhost:3000/api/project/${params?.id}`
+  )
   // const response = await fetch(
-  //   `https://andresnavag93.vercel.app/api/avo/${params?.id}`
+  //   `https://andresnavag93.vercel.app/api/project/${params?.id}`
   // )
   const project = await response.json()
 

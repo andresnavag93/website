@@ -10,7 +10,8 @@ type YesOrNoApiResponse = {
 }
 
 const fetchResult = async () => {
-  const res = await fetch('https://andresnavag93.vercel.app/api/yes-or-no')
+  // const res = await fetch('https://andresnavag93.vercel.app/api/yes-or-no')
+  const res = await fetch('http://localhost:3000/api/yes-or-no')
   const { data }: YesOrNoApiResponse = await res.json()
 
   return data
@@ -57,12 +58,12 @@ const YesOrNo = ({ initialResult }: { initialResult: string }) => {
             loading={isLoading}
             disabled={isLoading}
           >
-            Intentar de nuevo
+            Try again
           </Button>
         </p>
         <p>
           <Link href="/">
-            <a className="ui black button basic">Volver al inicio</a>
+            <a className="ui black button basic">Back to Home</a>
           </Link>
         </p>
       </div>

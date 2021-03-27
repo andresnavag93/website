@@ -2,7 +2,7 @@ import { IncomingMessage, ServerResponse } from 'http'
 import DB from '@database'
 import enablePublicAccess from '@cors'
 
-const allAvos = async (req: IncomingMessage, res: ServerResponse) => {
+const allProjects = async (req: IncomingMessage, res: ServerResponse) => {
   try {
     // Generally, you would not want this in your apps.
     // See more in 'cors.js'
@@ -27,4 +27,4 @@ const allAvos = async (req: IncomingMessage, res: ServerResponse) => {
   }
 }
 
-export default allAvos
+export default allProjects

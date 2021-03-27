@@ -9,22 +9,33 @@ type Json =
 
 type TProjectId = string
 
-type TProjectAttributes = {
+type TProjectLinks = {
+  github?: string
+  web?: string
+  demo?: string
+  demo2?: string
+}
+
+type TProjectAreaFeature = {
+  name: string
+  color: SemanticCOLORS
+}
+
+type TProjectFeatures = {
   description: string
-  shape: string
-  hardiness: string
-  taste: string
+  area: TProjectAreaFeature
+  date: string
+  links: Array<Array<string>>
+  technologies: Array<string>
+  industry: string
 }
 
 type TProject = {
   id: TProjectId
-  name: string
-  sku: string
-  price: number
-  image: Url
-  attributes: TProjectAttributes
+  title: string
   subtitle: string
-  date: string
+  image: Url
+  features: TProjectFeatures
 }
 
 type TAPIPROJECTDetailResponse = TProject
@@ -34,3 +45,33 @@ type TAPIProjectResponse = {
   data: TProject[]
   error?: string
 }
+
+const sizes = [
+  'mini',
+  'tiny',
+  'small',
+  'medium',
+  'large',
+  'big',
+  'huge',
+  'massive',
+]
+
+const colors = [
+  'red',
+  'orange',
+  'yellow',
+  'olive',
+  'green',
+  'teal',
+  'blue',
+  'violet',
+  'purple',
+  'pink',
+  'brown',
+  'grey',
+  'black',
+]
+
+// <Label color="red" size="medium"> {features.area} </Label>
+// <Label as="a" href="https://react.semantic-ui.com/" target="_blank"> {features.date}</Label>
