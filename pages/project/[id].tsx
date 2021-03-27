@@ -24,12 +24,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const response = await fetch(
-    `http://localhost:3000/api/project/${params?.id}`
-  )
   // const response = await fetch(
-  //   `https://andresnavag93.vercel.app/api/project/${params?.id}`
+  //   `http://localhost:3000/api/project/${params?.id}`
   // )
+  const response = await fetch(
+    `https://andresnavag93.vercel.app/api/project/${params?.id}`
+  )
   const project = await response.json()
 
   // Pass post data to the page via props
