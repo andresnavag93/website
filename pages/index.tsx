@@ -2,16 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import { Image, Header } from 'semantic-ui-react'
 import { GetStaticProps } from 'next'
-import fetch from 'isomorphic-unfetch'
 import Layout from '@components/Layout/Layout'
 import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader'
 import ProjectList from '@components/ProjectList/ProjectList'
+import allData from '../database/data'
 
 export const getStaticProps: GetStaticProps = async () => {
-  // const response = await fetch('http://localhost:3000/api/project')
-  const response = await fetch('https://andresnavag93.vercel.app/api/avo')
-  const { data: projectList }: TAPIProjectResponse = await response.json()
-
+  const projectList = Object.values(allData)
   return {
     props: {
       projectList,
