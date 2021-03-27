@@ -8,8 +8,8 @@ import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader'
 import ProjectList from '@components/ProjectList/ProjectList'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await fetch('http://localhost:3000/api/project')
-  // const response = await fetch('https://andresnavag93.vercel.app/api/project')
+  // const response = await fetch('http://localhost:3000/api/project')
+  const response = await fetch('https://andresnavag93.vercel.app/api/project')
   const { data: projectList }: TAPIProjectResponse = await response.json()
 
   return {

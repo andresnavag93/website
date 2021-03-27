@@ -10,8 +10,8 @@ type YesOrNoApiResponse = {
 }
 
 const fetchResult = async () => {
-  // const res = await fetch('https://andresnavag93.vercel.app/api/yes-or-no')
-  const res = await fetch('http://localhost:3000/api/yes-or-no')
+  const res = await fetch('https://andresnavag93.vercel.app/api/yes-or-no')
+  // const res = await fetch('http://localhost:3000/api/yes-or-no')
   const { data }: YesOrNoApiResponse = await res.json()
 
   return data
