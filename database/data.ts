@@ -1,10 +1,36 @@
 export const dataFullStack: Record<TProjectId, TProject> = {
+  'marvel-world': {
+    id: 'marvel-world',
+    title: 'Marvel World',
+    subtitle: 'Website',
+    image: '/images/marvel-world.jpg',
+    area: { name: 'Front-End / Web', color: 'blue' },
+    date: '2020',
+    features: {
+      industry: 'Comics',
+      description: `Marvel concept web page where you can see existing characters,
+      comics and stories, as well as bookmark and uncheck favorites. The best practices
+      in development are used for a good score in Performance, web accessibility, PWA
+      and best practices in lighthouse.`,
+      technologies: [
+        'React.js',
+        'Webpack',
+        'Heroku',
+        'Redux',
+        'Styled Components',
+      ],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/marvel-world'],
+        ['Web', 'https://the-marvel-world.herokuapp.com/'],
+      ],
+    },
+  },
   'bison-gym': {
     id: 'bison-gym',
     title: 'Bison Reserve',
     subtitle: 'Booking System',
     image: '/images/bison-gym.jpg',
-    area: { name: 'Backend/API', color: 'red' },
+    area: { name: 'Back-End / API', color: 'red' },
     date: '2020',
     features: {
       industry: 'Gym, Health & Wellness',
@@ -15,6 +41,24 @@ export const dataFullStack: Record<TProjectId, TProject> = {
         made and news and relevant information from the sports center / gym.`,
       technologies: ['Node.js', 'PostgreSQL', 'AWS'],
       links: [['Web', 'http://test-bison.s3-website-us-east-1.amazonaws.com']],
+    },
+  },
+  'nativapps-tutorials': {
+    id: 'nativapps-tutorials',
+    title: 'NativApps Tutorials',
+    subtitle: 'Landing Web',
+    image: '/images/nativapps-tutorials.jpg',
+    area: { name: 'Front-End / Landing Web', color: 'blue' },
+    date: '2020',
+    features: {
+      industry: 'Education & Tutorials',
+      description: `Landing web of services dedicated to the exhibition of online tutorials.
+      Informative banners, client logos, plans and promotions are displayed.`,
+      technologies: ['React.js', 'Webpack', 'AWS'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/nativapps-tutorials'],
+        ['Web', 'https://andresnavag93.github.io/nativapps-tutorials/'],
+      ],
     },
   },
   'wayu-mx': {
@@ -41,9 +85,9 @@ export const dataFullStack: Record<TProjectId, TProject> = {
   sloncare: {
     id: 'sloncare',
     title: 'Sloncare',
-    subtitle: 'Health and Care System',
+    subtitle: 'Health & Care System',
     image: '/images/sloncare.jpg',
-    area: { name: 'Backend/API', color: 'red' },
+    area: { name: 'Back-End / API', color: 'red' },
     date: '2018',
     features: {
       industry: 'Medical Care',
@@ -83,7 +127,7 @@ export const dataFullStack: Record<TProjectId, TProject> = {
     title: 'Pavimenti',
     subtitle: 'Ecommerce System',
     image: '/images/pavimenti.jpg',
-    area: { name: 'Backend/API', color: 'red' },
+    area: { name: 'Back-End / API', color: 'red' },
     date: '2018',
     features: {
       industry: 'Construction Material',
@@ -102,7 +146,7 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
     title: 'Video Games',
     subtitle: 'Booking System',
     image: '/images/bison-gym.jpg',
-    area: { name: 'Backend/API', color: 'red' },
+    area: { name: 'Back-End / API', color: 'red' },
     date: '2020',
     features: {
       industry: 'Gym, Health & Wellness',

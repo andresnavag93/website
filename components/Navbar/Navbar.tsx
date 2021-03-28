@@ -11,13 +11,6 @@ const Navbar = () => {
       <Container text>
         <Dropdown item text="Porfolio">
           <Dropdown.Menu>
-            <Link href="/videogames" passHref>
-              <Dropdown.Item
-                icon="gamepad"
-                text="Video Games (AR)"
-                active={pathname === '/videogames'}
-              />
-            </Link>
             <Link href="/" passHref>
               <Dropdown.Item
                 icon="globe"
@@ -25,10 +18,17 @@ const Navbar = () => {
                 active={pathname === '/'}
               />
             </Link>
+            <Link href="/videogames" passHref>
+              <Dropdown.Item
+                icon="gamepad"
+                text="Video Games (AR)"
+                active={pathname === '/videogames'}
+              />
+            </Link>
           </Dropdown.Menu>
         </Dropdown>
         <Menu.Menu position="right">
-          <Link href="/about" passHref>
+          {/* <Link href="/about" passHref>
             <Menu.Item
               icon="globe"
               active={pathname === '/about'}
@@ -37,7 +37,7 @@ const Navbar = () => {
             >
               About me
             </Menu.Item>
-          </Link>
+          </Link> */}
         </Menu.Menu>
       </Container>
       <style jsx global>{`
