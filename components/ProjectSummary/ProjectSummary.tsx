@@ -12,17 +12,31 @@ const ProjectSummary = ({ project }: ProjectSummaryProps) => (
     <Item.Group as="section">
       <Item style={{ alignItems: 'center', marginTop: '3rem' }}>
         <Item.Image size="medium">
-          <img src={project.image} alt={project.title} />
+          <div>
+            <img
+              src={project.image}
+              alt={project.title}
+              style={{
+                boxShadow: '0 1px 3px 0 #d4d4d5',
+                border: '1px solid #d4d4d5',
+                borderRadius: '5px',
+              }}
+            />
+          </div>
         </Item.Image>
         <Item.Content>
           <Item.Header as="h1">{project.title}</Item.Header>
           <Item.Description>
             <p>{project.subtitle}</p>
-            {/* <Label>{`SKU: ${project.sku}`}</Label> */}
+            <Label
+              color={project.area.color}
+              size="medium"
+              style={{ marginRight: '0.5rem' }}
+            >
+              {project.area.name}
+            </Label>
+            <Label>{project.date}</Label>
           </Item.Description>
-          {/* <Item.Extra>
-            <AddToCart project={project} />
-          </Item.Extra> */}
         </Item.Content>
       </Item>
     </Item.Group>

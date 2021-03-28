@@ -9,6 +9,8 @@ type Json =
 
 type TProjectId = string
 
+type TModelId = string
+
 type TProjectLinks = {
   github?: string
   web?: string
@@ -23,8 +25,6 @@ type TProjectAreaFeature = {
 
 type TProjectFeatures = {
   description: string
-  area: TProjectAreaFeature
-  date: string
   links: Array<Array<string>>
   technologies: Array<string>
   industry: string
@@ -35,7 +35,18 @@ type TProject = {
   title: string
   subtitle: string
   image: Url
+  area: TProjectAreaFeature
+  date: string
   features: TProjectFeatures
+}
+
+type TModel = {
+  id: TModelId
+  title: string
+  subtitle: string
+  image: Url
+  area: TProjectAreaFeature
+  links: Array<Array<string>>
 }
 
 type TAPIPROJECTDetailResponse = TProject
