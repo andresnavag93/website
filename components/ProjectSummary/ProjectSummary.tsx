@@ -36,7 +36,6 @@ const ProjectSummary = ({ project }: ProjectSummaryProps) => (
               {project.area.name}
             </Label>
             <Label>{project.date}</Label>
-            {/* <Label>{`SKU: ${project.sku}`}</Label> */}
           </Item.Description>
         </Item.Content>
       </Item>

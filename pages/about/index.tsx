@@ -38,7 +38,7 @@ const AboutPage = () => {
           Sobre mí
         </Header>
         <figure>
-          <Image src="/images/avocados.jpg" alt="Avocados on a table" />
+          {/* <Image src="/images/avocados.jpg" alt="Avocados on a table" /> */}
           {/* <figcaption>
             Originally from{' '}
             <a

@@ -4,10 +4,10 @@ import { Image, Header } from 'semantic-ui-react'
 import { GetStaticProps } from 'next'
 import Layout from '@components/Layout/Layout'
 import ProjectList from '@components/ProjectList/ProjectList'
-import allData from '../../database/data'
+import { dataVideoGames } from '../../database/data'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const projectList = Object.values(allData)
+  const projectList = Object.values(dataVideoGames)
   return {
     props: {
       projectList,
