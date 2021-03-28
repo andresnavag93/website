@@ -11,10 +11,9 @@ const mapProjectsToCards = (projects: TProject[]) =>
     ({
       title,
       id,
-      features: {
-        area: { name, color },
-        date,
-      },
+      area: { name, color },
+      date,
+      features: {},
       subtitle,
       image,
     }) => (

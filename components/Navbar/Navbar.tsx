@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Menu, Container } from 'semantic-ui-react'
-
-import { Avocado } from '@components/SVGIcons'
 
 const Navbar = () => {
   const { pathname } = useRouter()
@@ -14,10 +12,19 @@ const Navbar = () => {
         <Link href="/" passHref>
           <Menu.Item
             active={pathname === '/'}
-            title="Inicio | Todos los proyectos"
+            title="Inicio | FullStack Projects"
+            style={{ textAlign: 'center' }}
           >
-            {/* <Avocado /> */}
-            Portfolio
+            Fullt Stack <br /> Portfolio
+          </Menu.Item>
+        </Link>
+        <Link href="/videogames" passHref>
+          <Menu.Item
+            active={pathname === '/videogames'}
+            title="Inicio | Videogames Projects"
+            style={{ textAlign: 'center' }}
+          >
+            Video Games (AR) <br /> Portfolio
           </Menu.Item>
         </Link>
         {/* <Menu.Menu position="right">

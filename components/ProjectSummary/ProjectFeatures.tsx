@@ -19,12 +19,12 @@ const ProjectFeatures = ({
 
       return <> {object}</>
     } else if (key === 'area') {
-      let { name, color } = otherFeatures[key]
-      return (
-        <Label color={color} size="medium" style={{ marginRight: '0.5rem' }}>
-          {name}
-        </Label>
-      )
+      // let { name, color } = otherFeatures[key]
+      // return (
+      //   <Label color={color} size="medium" style={{ marginRight: '0.5rem' }}>
+      //     {name}
+      //   </Label>
+      // )
     } else if (key === 'technologies') {
       let technologies = otherFeatures[key]
       let object = technologies.map((value) => (
