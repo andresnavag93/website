@@ -19,7 +19,7 @@ const HomePage = ({ projectList }: { projectList: TProject[] }) => {
   return (
     <Layout>
       <Header as="h1" textAlign="center" style={{ margin: '3rem' }}>
-        Full Stack Portfolio
+        Back-End / Front-End
       </Header>
       <ProjectList projects={projectList} />
       <style jsx>{`

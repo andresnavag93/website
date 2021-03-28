@@ -14,15 +14,22 @@ const Navbar = () => {
             <Link href="/" passHref>
               <Dropdown.Item
                 icon="globe"
-                text="Full Stack"
+                text="Back-End / Front-End"
                 active={pathname === '/'}
               />
             </Link>
             <Link href="/videogames" passHref>
               <Dropdown.Item
                 icon="gamepad"
-                text="Video Games (AR)"
+                text="Video Games / Augmented Reality"
                 active={pathname === '/videogames'}
+              />
+            </Link>
+            <Link href="/models3d" passHref>
+              <Dropdown.Item
+                icon="video"
+                text="3D Models / Animations"
+                active={pathname === '/models3d'}
               />
             </Link>
           </Dropdown.Menu>

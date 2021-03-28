@@ -8,15 +8,7 @@ type ProjectListProps = {
 
 const mapProjectsToCards = (projects: TProject[]) =>
   projects.map(
-    ({
-      title,
-      id,
-      area: { name, color },
-      date,
-      features: {},
-      subtitle,
-      image,
-    }) => (
+    ({ title, id, area: { name, color }, date, subtitle, image }) => (
       <Link key={id} href="/project/[id]" as={`/project/${id}`} passHref>
         <Card
           as="a"
