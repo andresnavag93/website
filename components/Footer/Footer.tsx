@@ -80,7 +80,7 @@ const Footer = () => (
                     href="https://www.linkedin.com/in/andresnavag93"
                     target="_blank"
                   >
-                    Linked In
+                    LinkedIn
                   </a>
                 }
               />

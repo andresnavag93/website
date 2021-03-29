@@ -294,7 +294,7 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
     features: {
       classification: 'Puzzle',
       description: `3D video game consisting of earn points by shooting different
-      cubes in a limited time. Theyellow ones take away time, the white ones
+      cubes in a limited time. The yellow ones take away time, the white ones
       add time and the green ones add points (Education Purposes).`,
       technologies: ['Unity 3D'],
       links: [
