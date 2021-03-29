@@ -12,7 +12,6 @@ const renderCell = (links: Array<Array<string>>) => {
         <a href={values[1]} target="_blank">
           {values[0]}
         </a>
-        {/* {!(i === links.length - 1) && ', '} */}
       </span>
     </Label>
   ))

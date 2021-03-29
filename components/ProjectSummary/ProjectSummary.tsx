@@ -20,6 +20,7 @@ const ProjectSummary = ({ project }: ProjectSummaryProps) => (
                 boxShadow: '0 1px 3px 0 #d4d4d5',
                 border: '1px solid #d4d4d5',
                 borderRadius: '5px',
+                maxHeight: 'auto !important',
               }}
             />
           </div>

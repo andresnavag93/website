@@ -13,6 +13,7 @@ const mapProjectsToCards = (projects: TProject[]) =>
         <Card
           as="a"
           header={title}
+          height={300}
           image={image}
           meta={
             <>

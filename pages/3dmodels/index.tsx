@@ -19,7 +19,7 @@ const HomePage = ({ modelList }: { modelList: TModel[] }) => {
   return (
     <Layout>
       <Header as="h1" textAlign="center" style={{ margin: '3rem' }}>
-        3D Models / Animations
+        3D Models - Animations
       </Header>
       <ModelList modelList={modelList} />
       <style jsx>{`

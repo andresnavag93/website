@@ -9,26 +9,26 @@ const Navbar = () => {
   return (
     <Menu size="huge" borderless pointing as="header">
       <Container text>
-        <Dropdown item text="Porfolio">
+        <Dropdown item text="Portfolio">
           <Dropdown.Menu>
             <Link href="/" passHref>
               <Dropdown.Item
                 icon="globe"
-                text="Back-End / Front-End"
+                text="BackEnd - FrontEnd"
                 active={pathname === '/'}
               />
             </Link>
             <Link href="/videogames" passHref>
               <Dropdown.Item
                 icon="gamepad"
-                text="Video Games / Augmented Reality"
+                text="Video Games - Augmented Reality"
                 active={pathname === '/videogames'}
               />
             </Link>
-            <Link href="/models3d" passHref>
+            <Link href="/3dmodels" passHref>
               <Dropdown.Item
                 icon="video"
-                text="3D Models / Animations"
+                text="3D Models - Animations"
                 active={pathname === '/models3d'}
               />
             </Link>
