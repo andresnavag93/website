@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Menu, Container } from 'semantic-ui-react'
-
-import { Avocado } from '@components/SVGIcons'
+import { Menu, Container, Dropdown } from 'semantic-ui-react'
 
 const Navbar = () => {
   const { pathname } = useRouter()
@@ -11,22 +9,43 @@ const Navbar = () => {
   return (
     <Menu size="huge" borderless pointing as="header">
       <Container text>
-        <Link href="/" passHref>
-          <Menu.Item
-            active={pathname === '/'}
-            title="Inicio | Todos los proyectos"
-          >
-            {/* <Avocado /> */}
-            Portfolio
-          </Menu.Item>
-        </Link>
-        {/* <Menu.Menu position="right">
-          <Link href="/about" passHref>
-            <Menu.Item active={pathname === '/about'}>
+        <Dropdown item text="Portfolio">
+          <Dropdown.Menu>
+            <Link href="/" passHref>
+              <Dropdown.Item
+                icon="globe"
+                text="BackEnd - FrontEnd"
+                active={pathname === '/'}
+              />
+            </Link>
+            <Link href="/videogames" passHref>
+              <Dropdown.Item
+                icon="gamepad"
+                text="Video Games - Augmented Reality"
+                active={pathname === '/videogames'}
+              />
+            </Link>
+            <Link href="/3dmodels" passHref>
+              <Dropdown.Item
+                icon="video"
+                text="3D Models - Animations"
+                active={pathname === '/models3d'}
+              />
+            </Link>
+          </Dropdown.Menu>
+        </Dropdown>
+        <Menu.Menu position="right">
+          {/* <Link href="/about" passHref>
+            <Menu.Item
+              icon="globe"
+              active={pathname === '/about'}
+              title="Inicio | Videogames Projects"
+              style={{ textAlign: 'center' }}
+            >
               About me
             </Menu.Item>
-          </Link>
-        </Menu.Menu> */}
+          </Link> */}
+        </Menu.Menu>
       </Container>
       <style jsx global>{`
         .ui.menu.huge {

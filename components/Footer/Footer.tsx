@@ -46,19 +46,41 @@ const Footer = () => (
                 @jonalvarezz
               </a>
             </p> */}
-            {/* <List horizontal style={{ display: 'flex' }}> */}
-            <List horizontal>
-              {/* <List.Item
-                icon="twitter"
+            <List
+              horizontal
+              style={{ display: 'flex', justifyContent: 'center' }}
+            >
+              {/* <List horizontal> */}
+              <List.Item
+                icon="youtube"
                 style={{ display: 'flex' }}
-                content={<a href="https://twitter.com/andresnavag93">Twitter</a>}
-              /> */}
+                content={
+                  <a
+                    href="https://www.youtube.com/channel/UC59WLJg8ghkepR2WLl_xB9w"
+                    target="_blank"
+                  >
+                    Youtube
+                  </a>
+                }
+              />
               <List.Item
                 icon="github"
                 style={{ display: 'flex' }}
                 content={
                   <a href="https://github.com/andresnavag93" target="_blank">
                     GitHub
+                  </a>
+                }
+              />
+              <List.Item
+                icon="linkedin"
+                style={{ display: 'flex' }}
+                content={
+                  <a
+                    href="https://www.linkedin.com/in/andresnavag93"
+                    target="_blank"
+                  >
+                    LinkedIn
                   </a>
                 }
               />

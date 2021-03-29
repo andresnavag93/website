@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '@components/Layout/Layout'
 import ProjectSummary from '@components/ProjectSummary/ProjectSummary'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import allData from '../../database/data'
+import { allData } from '../../database/data'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const data = Object.values(allData)
