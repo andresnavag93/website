@@ -239,9 +239,13 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
     features: {
       classification: 'Platformer',
       description: `A 2D platform video game that consists of advancing
-      different levels by winning coins and defeating different enemies.`,
+      different levels by winning coins and defeating different enemies (Education Purposes).`,
       technologies: ['Unity 3D'],
-      links: [['Video Clip', 'https://youtu.be/JXZgZYYRIi4']],
+
+      links: [
+        ['Github', 'https://github.com/andresnavag93/world-platfom'],
+        ['Video Clip', 'https://youtu.be/JXZgZYYRIi4'],
+      ],
     },
   },
   'VG-ping-pong': {
@@ -253,9 +257,12 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
     date: '2019',
     features: {
       classification: 'Sports',
-      description: `2D video game of the classic pong table game.`,
+      description: `2D video game of the classic pong table game (Education Purposes).`,
       technologies: ['Unity 3D'],
-      links: [['Video Clip', 'https://youtu.be/CmOeeDw1sSs']],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/classic-pong'],
+        ['Video Clip', 'https://youtu.be/CmOeeDw1sSs'],
+      ],
     },
   },
   'VG-roller-madness': {
@@ -269,9 +276,12 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       classification: 'Puzzle',
       description: `3D video game that consists of collecting a certain amount of
       coins depending on the level andavoiding or dodging the animated blocks so
-      they don't destroy you.`,
+      they don't destroy you (Education Purposes).`,
       technologies: ['Unity 3D'],
-      links: [['Video Clip', 'https://youtu.be/ncf9bPmcjB0']],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/roller-madness'],
+        ['Video Clip', 'https://youtu.be/ncf9bPmcjB0'],
+      ],
     },
   },
   'VG-box-shooter': {
@@ -285,9 +295,12 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       classification: 'Puzzle',
       description: `3D video game consisting of earn points by shooting different
       cubes in a limited time. Theyellow ones take away time, the white ones
-      add time and the green ones add points.`,
+      add time and the green ones add points (Education Purposes).`,
       technologies: ['Unity 3D'],
-      links: [['Video Clip', 'https://youtu.be/NrT9TLQ41uY']],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/box-shooter'],
+        ['Video Clip', 'https://youtu.be/NrT9TLQ41uY'],
+      ],
     },
   },
   'VG-solar-system': {
@@ -301,9 +314,12 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       classification: 'Simulation',
       description: `Desktop video game consisting of collecting coins, passing
       through tunnels, and overcoming ordodging animated obstacles/animals through
-      three different worlds of ice, desert, and fire, to reach the finalgoal.`,
+      three different worlds of ice, desert, and fire, to reach the finalgoal (Education Purposes).`,
       technologies: ['Unity 3D'],
-      links: [['Video Clip', 'https://youtu.be/7jwhCgYkmT8']],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/solar-system'],
+        ['Video Clip', 'https://youtu.be/7jwhCgYkmT8'],
+      ],
     },
   },
   'VG-learning-with-ar': {
@@ -317,7 +333,7 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       classification: 'Education',
       description: `A mobile game with augmented reality that allows children under
       5 years old to count the numbers, how to trace and write, associations with the
-      same numbers of fruits, adds and subtracts.`,
+      same numbers of fruits, adds and subtracts (Education Purposes).`,
       technologies: ['Unity 3D', 'Vuforia'],
       links: [['Video Clip', 'https://youtu.be/slQDzWXIMT0']],
     },
@@ -335,7 +351,7 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       augmented reality using different animal marks. It consists of seeing the animals
       in 3D, and once any pair of cards is discovered, the app shows an animation
       corresponding to the animal paired. There are pairs of cats, tigers, horses,
-      lizards, and rhinos.`,
+      lizards, and rhinos (Education Purposes).`,
       technologies: ['Unity 3D', 'Vuforia'],
       links: [['Video Clip', 'https://youtu.be/Kgtr5BIKgy8']],
     },
@@ -351,9 +367,12 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       classification: 'Platformer',
       description: `Desktop video game consisting of collecting coins, passing
       through tunnels, and overcoming or dodging animated obstacles/animals through
-      three different worlds of ice, desert, and fire, to reach the final goal.`,
+      three different worlds of ice, desert, and fire, to reach the final goal (Education Purposes).`,
       technologies: ['Unity 3D', 'Maya'],
-      links: [['Video Clip', 'https://youtu.be/j0jVuYq4nSk']],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/star-wars'],
+        ['Video Clip', 'https://youtu.be/j0jVuYq4nSk'],
+      ],
     },
   },
 }
