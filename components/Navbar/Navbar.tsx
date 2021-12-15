@@ -7,12 +7,17 @@ const Navbar = () => {
   const { pathname } = useRouter()
 
   return (
-    <Menu size="huge" borderless pointing as="header">
+    <Menu
+      size="huge"
+      borderless
+      as="header"
+      inverted
+      style={{ backgroundColor: '#1b2a68' }}
+    >
       <Container text>
         <Menu.Menu position="left">
           <Link href="/" passHref>
             <Menu.Item
-              icon="globe"
               active={pathname === '/'}
               title="Andres Navarro Website"
               style={{ textAlign: 'center' }}
@@ -21,7 +26,7 @@ const Navbar = () => {
             </Menu.Item>
           </Link>
           <Dropdown item text="Portfolio">
-            <Dropdown.Menu>
+            <Dropdown.Menu style={{ backgroundColor: '#1b2a68' }}>
               <Link href="/fullstack" passHref>
                 <Dropdown.Item
                   icon="globe"
@@ -50,6 +55,10 @@ const Navbar = () => {
       <style jsx global>{`
         .ui.menu.huge {
           font-size: 1.5rem;
+        }
+        i,
+        a span {
+          color: white;
         }
       `}</style>
     </Menu>

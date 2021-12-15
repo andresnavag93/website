@@ -1,10 +1,9 @@
 import React from 'react'
-import Link from 'next/link'
-import { Image, Header } from 'semantic-ui-react'
+import { Header } from 'semantic-ui-react'
 import { GetStaticProps } from 'next'
 import Layout from '@components/Layout/Layout'
 import ModelList from '@components/ModelList/ModelList'
-import { dataModels } from '../../database/data'
+import { dataModels } from '../../database/dataModels'
 
 export const getStaticProps: GetStaticProps = async () => {
   const modelList = Object.values(dataModels)
@@ -22,6 +21,7 @@ const HomePage = ({ modelList }: { modelList: TModel[] }) => {
         3D Models - Animations
       </Header>
       <ModelList modelList={modelList} />
+      <br />
       <style jsx>{`
         section {
           text-align: center;

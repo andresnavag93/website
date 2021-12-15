@@ -1,10 +1,9 @@
 import React from 'react'
-import Link from 'next/link'
-import { Image, Header } from 'semantic-ui-react'
+import { Header } from 'semantic-ui-react'
 import { GetStaticProps } from 'next'
 import Layout from '@components/Layout/Layout'
 import ProjectList from '@components/ProjectList/ProjectList'
-import { dataFullStack } from '../../database/data'
+import { dataFullStack } from '../../database/dataFullStack'
 
 export const getStaticProps: GetStaticProps = async () => {
   const projectList = Object.values(dataFullStack)
@@ -22,6 +21,7 @@ const HomePage = ({ projectList }: { projectList: TProject[] }) => {
         Web Full Stack
       </Header>
       <ProjectList projects={projectList} />
+      <br />
       <style jsx>{`
         section {
           text-align: center;

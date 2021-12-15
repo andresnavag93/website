@@ -10,11 +10,15 @@ const Footer = () => (
       padding: '4em 0em',
       marginTop: '3em',
       borderTop: '1px solid #f2f2f2',
+      backgroundColor: '#1b2a68',
     }}
   >
-    <Container text>
+    <Container text inverted>
       <Grid stackable>
-        <Grid.Row style={{ textAlign: 'center' }}>
+        <Grid.Row
+          className="hoverColor"
+          style={{ textAlign: 'center', color: 'white' }}
+        >
           {/* <Grid.Column width={5}>
             <Header as="h4" content="About me" />
             <List >
@@ -143,6 +147,13 @@ const Footer = () => (
       .colophon-entry {
         color: grey;
         margin-bottom: 0;
+      }
+      a {
+        color: white;
+      }
+
+      a:hover {
+        color: #c8c6c6;
       }
     `}</style>
   </Segment>

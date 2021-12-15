@@ -28,7 +28,15 @@ const ProjectFeatures = ({
     } else if (key === 'technologies') {
       let technologies = otherFeatures[key]
       let object = technologies.map((value) => (
-        <Label key={value} size="medium" style={{ marginRight: '0.5rem' }}>
+        <Label
+          key={value}
+          size="medium"
+          style={{
+            marginRight: '0.5rem',
+            backgroundColor: '#1b2a68',
+            color: 'white',
+          }}
+        >
           {value}
         </Label>
       ))
@@ -45,7 +53,7 @@ const ProjectFeatures = ({
       </Header>
       <p>{description}</p>
 
-      <Divider />
+      {/* <Divider /> */}
 
       <Table celled>
         <Table.Header>
@@ -63,6 +71,8 @@ const ProjectFeatures = ({
           ))}
         </Table.Body>
       </Table>
+
+      <br />
 
       <style jsx>{`
         .container :global(.attr-name) {
