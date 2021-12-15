@@ -9,6 +9,8 @@ type Json =
 
 type TProjectId = string
 
+type TResumeId = string
+
 type TModelId = string
 
 type TProjectLinks = {
@@ -57,6 +59,29 @@ type TAPIProjectResponse = {
   lenght: number
   data: TProject[]
   error?: string
+}
+
+type TResumeSkills = {
+  languages?: Array<string>
+  code?: Array<string>
+  'game Engines'?: Array<string>
+  'augmented Reality'?: Array<string>
+  '3d Modeling'?: Array<string>
+  design?: Array<string>
+  'video Editing'?: Array<string>
+  'front-End'?: Array<string>
+  'back-End'?: Array<string>
+  dapp?: Array<string>
+  'block Chain Networks'?: Array<string>
+  devOps?: Array<string>
+  databases?: Array<string>
+}
+
+type TResume = {
+  id: TResumeId
+  title: string
+  resume: string
+  skills: TResumeFeatures
 }
 
 const sizes = [

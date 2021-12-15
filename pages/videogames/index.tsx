@@ -1,10 +1,9 @@
 import React from 'react'
-import Link from 'next/link'
-import { Image, Header } from 'semantic-ui-react'
+import { Header } from 'semantic-ui-react'
 import { GetStaticProps } from 'next'
 import Layout from '@components/Layout/Layout'
 import ProjectList from '@components/ProjectList/ProjectList'
-import { dataVideoGames } from '../../database/data'
+import { dataVideoGames } from '../../database/dataVideoGames'
 
 export const getStaticProps: GetStaticProps = async () => {
   const projectList = Object.values(dataVideoGames)
@@ -22,6 +21,7 @@ const HomePage = ({ projectList }: { projectList: TProject[] }) => {
         Video Games - Augmented Reality
       </Header>
       <ProjectList projects={projectList} />
+      <br />
       <style jsx>{`
         section {
           text-align: center;

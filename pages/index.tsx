@@ -1,31 +1,46 @@
 import React from 'react'
-import Link from 'next/link'
-import { Image, Header } from 'semantic-ui-react'
-import { GetStaticProps } from 'next'
+import { Image, Header, Card, Label } from 'semantic-ui-react'
 import Layout from '@components/Layout/Layout'
-import ProjectList from '@components/ProjectList/ProjectList'
-import { dataFullStack } from '../database/data'
+import AboutMe from '@components/AboutMe/AboutMe'
+import { dataAndres } from '../database/data'
 
-export const getStaticProps: GetStaticProps = async () => {
-  const projectList = Object.values(dataFullStack)
-  return {
-    props: {
-      projectList,
-    },
-  }
-}
-
-const HomePage = ({ projectList }: { projectList: TProject[] }) => {
+const HomePage = () => {
   return (
     <Layout>
-      <Header as="h1" textAlign="center" style={{ margin: '3rem' }}>
-        BackEnd - FrontEnd
-      </Header>
-      <ProjectList projects={projectList} />
+      <section>
+        <Header as="h1" textAlign="center" style={{ margin: '4rem' }}>
+          {dataAndres['HOME-andres-navarro'].title}
+        </Header>
+        <figure>
+          <Image
+            style={{ border: '1px solid' }}
+            src="/images/about/perfil.jpg"
+            alt="About me"
+            size="medium"
+            circular
+            centered
+            bordered
+            black
+          />
+        </figure>
+        <AboutMe {...dataAndres['HOME-andres-navarro']} />
+      </section>
+
       <style jsx>{`
-        section {
+        figure,
+        ol {
+          padding: 0;
+          margin: 0;
+        }
+
+        figure {
+          margin: 2rem auto 3rem;
           text-align: center;
-          margin-bottom: 2rem;
+        }
+        figcaption {
+          margin-top: 0.5rem;
+          font-site: 0.7rem;
+          color: grey;
         }
       `}</style>
     </Layout>

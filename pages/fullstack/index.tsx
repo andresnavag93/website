@@ -2,25 +2,25 @@ import React from 'react'
 import { Header } from 'semantic-ui-react'
 import { GetStaticProps } from 'next'
 import Layout from '@components/Layout/Layout'
-import ModelList from '@components/ModelList/ModelList'
-import { dataModels } from '../../database/dataModels'
+import ProjectList from '@components/ProjectList/ProjectList'
+import { dataFullStack } from '../../database/dataFullStack'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const modelList = Object.values(dataModels)
+  const projectList = Object.values(dataFullStack)
   return {
     props: {
-      modelList,
+      projectList,
     },
   }
 }
 
-const HomePage = ({ modelList }: { modelList: TModel[] }) => {
+const HomePage = ({ projectList }: { projectList: TProject[] }) => {
   return (
     <Layout>
       <Header as="h1" textAlign="center" style={{ margin: '3rem' }}>
-        3D Models - Animations
+        Web Full Stack
       </Header>
-      <ModelList modelList={modelList} />
+      <ProjectList projects={projectList} />
       <br />
       <style jsx>{`
         section {
