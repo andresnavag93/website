@@ -476,6 +476,40 @@ export const dataModels: Record<TModelId, TModel> = {
   },
 }
 
+export const dataAndres: Record<TProjectId, TProject> = {
+  'HOME-andres-navarro': {
+    id: 'HOME-andres-navarro',
+    title: 'Mercantil AR Corp',
+    subtitle: 'Photo Studio Entertainment System',
+    image: '/images/videogames/mercantil-ar-corp.jpg',
+    area: { name: 'Augmented Reality', color: 'green' },
+    date: '2020',
+    features: {
+      description: `Experience work for more than five (5) years in issue front-end, back-end, augmented reality, and video editing.
+        Core Strengths: Software Development, Strategic Planning, Process Improvement, Business Integration, Team Development
+        High Integrity and Honesty, Innovates, Solves Problems and Analyzes Issues, Proactivity, Responsibility, Confident,
+        Communicative, Patience, Work under pressure, and Fast Learning.`,
+      'Game Engines': ['Unity3D'],
+      'Augmented Reality': ['Vuforia'],
+      '3d Modeling': ['Blender3D'],
+      Design: ['Figma', 'Illustrator'],
+      'Video Editing': ['PremierPro'],
+      'Front-End': ['React'],
+      'Back-End': ['Node', 'Express'],
+      DevOps: [
+        'AWS',
+        'Route53',
+        'CloudFront',
+        'S3',
+        'Vercel',
+        'Surge',
+        'Heroku',
+      ],
+      Databases: ['Mongo', 'PostgreSql', 'MySql'],
+    },
+  },
+}
+
 export const allData: Record<TProjectId, TProject> = {
   ...dataFullStack,
   ...dataVideoGames,

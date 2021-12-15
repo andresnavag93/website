@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, Header } from 'semantic-ui-react'
+import { Image, Header, Card, Label } from 'semantic-ui-react'
 import Layout from '@components/Layout/Layout'
 
 const avoFacts = [
@@ -38,7 +38,16 @@ const AboutPage = () => {
           Sobre mí
         </Header>
         <figure>
-          {/* <Image src="/images/avocados.jpg" alt="Avocados on a table" /> */}
+          <Image
+            style={{ border: '2px solid' }}
+            src="/images/about/perfil.jpg"
+            alt="About me"
+            size="medium"
+            circular
+            centered
+            bordered
+            black
+          />
           {/* <figcaption>
             Originally from{' '}
             <a
@@ -49,14 +58,14 @@ const AboutPage = () => {
             </a>
           </figcaption> */}
         </figure>
-        {/* <ol>
+        <ol>
           {avoFacts.map(({ title, content }) => (
             <li key={title}>
               <h3 className="ui header">{title}</h3>
               <p>{content}</p>
             </li>
           ))}
-        </ol> */}
+        </ol>
       </section>
 
       <style jsx>{`
@@ -90,13 +99,13 @@ const AboutPage = () => {
           counter-reset: orderedlist;
         }
         li::before {
-          counter-increment: orderedlist;
-          content: counter(orderedlist);
+          // counter-increment: orderedlist;
+          // content: counter(orderedlist);
 
           // Boring stuff
           position: absolute;
           top: -43px;
-          left: -5px;
+          // left: -5px;
           color: #cecece;
           font-size: 5rem;
           font-weight: bold;
@@ -108,7 +117,7 @@ const AboutPage = () => {
         h3:first-child {
           // why the first-child selector you may ask...
           // to gain specificity and thus avoid using '!important' :)
-          padding-left: 40px;
+          //padding-left: 40px;
           margin-bottom: 2rem;
         }
       `}</style>
