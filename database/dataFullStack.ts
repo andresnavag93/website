@@ -1,4 +1,111 @@
 export const dataFullStack: Record<TProjectId, TProject> = {
+  'FS-platzi-punks': {
+    id: 'FS-platzi-punks',
+    title: 'NFTs Marketplace',
+    subtitle: 'Decentralized app',
+    image: '/images/fullstack/platzi-punks.jpg',
+    area: { name: 'Dapp', color: 'black' },
+    date: '2021',
+    features: {
+      classification: 'Smart Contracts / NFT Marketplace',
+      description: `Decentralized Nft Marketplace with a maximum collection of 10,000 Nfts with ERC721 standards. The Dapp is deployed in the Rinkeby testnet. The Platzi Punks can be mint and also be listed on rinkbeky's testnet on Opensea.`,
+      technologies: ['React.js', 'Solidity', 'Rinkeby', 'Web3.js'],
+      links: [
+        [
+          'Smart Contract',
+          'https://rinkeby.etherscan.io/address/0x8be14c046a9b858317ee36f7c20f3c0e5d52fc15#code',
+        ],
+        ['Web', 'https://platzi-punks-interface.vercel.app/#/'],
+        [
+          'Smart Contract Github',
+          'https://github.com/andresnavag93/platzi-punks',
+        ],
+        [
+          'MarketPlace Github',
+          'https://github.com/andresnavag93/platzi-punks-interface',
+        ],
+      ],
+    },
+  },
+  'FS-walmart-cill': {
+    id: 'FS-walmart-cill',
+    title: 'Walmart Cill',
+    subtitle: 'Websystem',
+    image: '/images/fullstack/walmart-cill.jpg',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2021',
+    features: {
+      client: 'Walmart',
+      classification: 'Error Processing System',
+      'developed in': 'Applaudo Studios',
+      description: `A system dedicated to internal error handling at Walmart. The system includes an advanced search, a complete list of errors, a detailed error view, error filters or attributes, and a help page.`,
+      technologies: ['Electrode.js', 'Redux'],
+    },
+  },
+  'FS-evencorp': {
+    id: 'FS-evencorp',
+    title: 'Evencorp',
+    subtitle: 'Corporate Website',
+    image: '/images/fullstack/evencorp.jpg',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2021',
+    features: {
+      client: 'Evencorp',
+      classification: 'Corporate Events',
+      description: `Corporate page to show the products and services, photo gallery and evencorp company information.`,
+      technologies: ['Gatsby.js'],
+      links: [['Web', 'https://evencorp.vercel.app/']],
+    },
+  },
+
+  'FS-policies': {
+    id: 'FS-policies',
+    title: 'Microservices Policy System',
+    subtitle: 'Web System ',
+    image: '/images/fullstack/policies.jpg',
+    area: { name: 'Full Stack', color: 'brown' },
+    date: '2021',
+    features: {
+      classification: 'Policies / Insurance',
+      description: `Vehicle policy system with microservices architecture. It has login, registration and views of clients, vehicles and policies.`,
+      technologies: ['Next.js', 'Node.js'],
+    },
+  },
+
+  'FS-giffy': {
+    id: 'FS-giffy',
+    title: 'Giffy',
+    subtitle: 'Website',
+    image: '/images/fullstack/giffy.jpg',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2020',
+    features: {
+      classification: 'Gifs',
+      description: `Training React skills building with a website that lists and searches gifs by name (Educational Purposes).`,
+      technologies: ['React.js'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/giffy'],
+        ['Web', 'https://giffy-pi.vercel.app/'],
+      ],
+    },
+  },
+  'FS-avocado-ecommerce': {
+    id: 'FS-avocado-ecommerce',
+    title: 'Avocado Ecommerce',
+    subtitle: 'Website',
+    image: '/images/fullstack/avocado-ecommerce.jpg',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2020',
+    features: {
+      classification: 'Ecommerce',
+      description: `Web Ecommerce to list avocado products, see product details, add them to the basket, and see surprising facts about avocados (Educational Purposes).`,
+      technologies: ['Next.js', 'Semantic-UI'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/avocado-ecommerce'],
+        ['Web', 'https://avocado-ecommerce.vercel.app/'],
+      ],
+    },
+  },
   'FS-marvel-world': {
     id: 'FS-marvel-world',
     title: 'Marvel World',
@@ -19,6 +126,23 @@ export const dataFullStack: Record<TProjectId, TProject> = {
       links: [
         ['Github', 'https://github.com/andresnavag93/marvel-world'],
         ['Web', 'https://the-marvel-world.herokuapp.com/'],
+      ],
+    },
+  },
+  'FS-ceptinel-events': {
+    id: 'FS-ceptinel-events',
+    title: 'Ceptinel Events',
+    subtitle: 'Landing Web',
+    image: '/images/fullstack/ceptinel-events.jpg',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2020',
+    features: {
+      classification: 'Events List',
+      description: `A simple Landing Web to list, search and filter company events (Testing Purposes).`,
+      technologies: ['React.js', 'Webpack', 'Redux', 'Material-Table'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/ceptinel-events'],
+        ['Web', 'https://andresnavag93.github.io/ceptinel-events/index.html'],
       ],
     },
   },

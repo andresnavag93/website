@@ -28,7 +28,7 @@ type TProjectAreaFeature = {
 type TProjectFeatures = {
   description: string
   'developed in'?: string
-  links: Array<Array<string>>
+  links?: Array<Array<string>>
   technologies: Array<string>
   client?: string
   classification?: string
@@ -50,7 +50,7 @@ type TModel = {
   subtitle: string
   image: Url
   area: TProjectAreaFeature
-  links: Array<Array<string>>
+  links?: Array<Array<string>>
 }
 
 type TAPIPROJECTDetailResponse = TProject

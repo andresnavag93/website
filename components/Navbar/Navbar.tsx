@@ -30,7 +30,7 @@ const Navbar = () => {
               <Link href="/fullstack" passHref>
                 <Dropdown.Item
                   icon="globe"
-                  text="Web Full Stack"
+                  text="Web Development - Blockchain"
                   active={pathname === '/fullstack'}
                 />
               </Link>
