@@ -18,7 +18,7 @@ const HomePage = ({ projectList }: { projectList: TProject[] }) => {
   return (
     <Layout>
       <Header as="h1" textAlign="center" style={{ margin: '3rem' }}>
-        Web Full Stack
+        Web Development - Blockchain
       </Header>
       <ProjectList projects={projectList} />
       <br />

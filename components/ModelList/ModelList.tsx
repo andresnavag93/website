@@ -38,7 +38,7 @@ const mapModelsToCards = (modelList: TModel[]) =>
             >
               {name}
             </Label>
-            {renderCell(links)}
+            {links && renderCell(links)}
           </>
         }
       />

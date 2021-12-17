@@ -50,7 +50,7 @@ type TModel = {
   subtitle: string
   image: Url
   area: TProjectAreaFeature
-  links: Array<Array<string>>
+  links?: Array<Array<string>>
 }
 
 type TAPIPROJECTDetailResponse = TProject
