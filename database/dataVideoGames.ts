@@ -1,4 +1,64 @@
 export const dataVideoGames: Record<TProjectId, TProject> = {
+  'VG-space-man': {
+    id: 'VG-space-man',
+    title: 'Space Man Run',
+    subtitle: 'Mobile Game',
+    image: '/images/videogames/space-man.jpg',
+    area: { name: 'Video Game', color: 'brown' },
+    date: '2021',
+    features: {
+      classification: 'Platformer',
+      description: `2D platform game where a spaceman runs endless grabbing coins and avoiding enemies (Education Purposes).`,
+      technologies: ['Unity 3D'],
+
+      links: [['Github', 'https://github.com/andresnavag93/space-man']],
+    },
+  },
+  'VG-awesome-runner': {
+    id: 'VG-awesome-runner',
+    title: 'Awesome Runner',
+    subtitle: 'Mobile Game',
+    image: '/images/videogames/awesome-runner.jpg',
+    area: { name: 'Video Game', color: 'brown' },
+    date: '2020',
+    features: {
+      classification: 'Platformer',
+      description: `3D platform game where a frog spaceman runs endless through a city, jumping platforms and avoiding enemies (Education Purposes).`,
+      technologies: ['Unity 3D'],
+
+      links: [['Github', 'https://github.com/andresnavag93/awesome-runner']],
+    },
+  },
+  'VG-puzzle-ball': {
+    id: 'VG-puzzle-ball',
+    title: 'Puzzle Ball',
+    subtitle: 'Mobile Game',
+    image: '/images/videogames/puzzle-ball.jpg',
+    area: { name: 'Video Game', color: 'brown' },
+    date: '2020',
+    features: {
+      classification: 'Puzzle',
+      description: `3D puzzle levels (Education Purposes).`,
+      technologies: ['Unity 3D'],
+
+      links: [['Github', 'https://github.com/andresnavag93/puzzle-ball']],
+    },
+  },
+  'VG-zigzag-ball': {
+    id: 'VG-zigzag-ball',
+    title: 'ZigZag Ball',
+    subtitle: 'Mobile Game',
+    image: '/images/videogames/zigzag-ball.jpg',
+    area: { name: 'Video Game', color: 'brown' },
+    date: '2020',
+    features: {
+      classification: 'Platformer',
+      description: `3D platform game where a ball rolls endless through falling platforms(Education Purposes).`,
+      technologies: ['Unity 3D'],
+
+      links: [['Github', 'https://github.com/andresnavag93/zigzag-ball']],
+    },
+  },
   'VG-mercantil-ar-corp': {
     id: 'VG-mercantil-ar-corp',
     title: 'Mercantil AR Corp',
