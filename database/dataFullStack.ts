@@ -40,6 +40,7 @@ export const dataFullStack: Record<TProjectId, TProject> = {
       'developed in': 'Applaudo Studios',
       description: `A system dedicated to internal error handling at Walmart. The system includes an advanced search, a complete list of errors, a detailed error view, error filters or attributes, and a help page.`,
       technologies: ['Electrode.js', 'Redux'],
+      links: [],
     },
   },
   'FS-evencorp': {
@@ -69,6 +70,7 @@ export const dataFullStack: Record<TProjectId, TProject> = {
       classification: 'Policies / Insurance',
       description: `Vehicle policy system with microservices architecture. It has login, registration and views of clients, vehicles and policies.`,
       technologies: ['Next.js', 'Node.js'],
+      links: [],
     },
   },
 
