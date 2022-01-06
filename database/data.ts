@@ -11,16 +11,15 @@ export const dataAndres: Record<TResumeId, TResume> = {
       `Teamwork, Fast Learning, Problem Solver, Proactive, Confident, Patient, Responsible, Honest, Innovator, Analytical Thinker, and Work under pressure.`,
     ],
     skills: {
-      languages: ['Spanish', 'English'],
-      code: ['C#', 'Javascript', 'C++', 'Solidity', 'HTML', 'CSS', 'Python'],
       'game Engines': ['Unity3D'],
       'augmented Reality': ['Vuforia'],
-      '3d Modeling': ['Blender3D'],
-      dapp: ['Truffle', 'Metamask', 'Hardhat', 'Web3.js'],
+      code: ['C#', 'Javascript', 'HTML', 'CSS', 'Python'],
       'front-End': ['React', 'Next.Js'],
+      '3d Modeling': ['Blender3D'],
       'back-End': ['Node', 'Express'],
       design: ['Figma', 'Illustrator'],
       'video Editing': ['PremierPro'],
+      dapp: ['Truffle', 'Metamask', 'Hardhat', 'Web3.js', 'Solidity'],
       devOps: [
         'AWS',
         'Route53',
@@ -31,6 +30,7 @@ export const dataAndres: Record<TResumeId, TResume> = {
         'Heroku',
       ],
       databases: ['Mongo', 'PostgreSql', 'MySql'],
+      languages: ['Spanish', 'English'],
     },
   },
 }
