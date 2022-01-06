@@ -80,7 +80,7 @@ type TResumeSkills = {
 type TResume = {
   id: TResumeId
   title: string
-  resume: string
+  resume: string[]
   skills: TResumeFeatures
 }
 

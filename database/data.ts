@@ -5,13 +5,14 @@ export const dataAndres: Record<TResumeId, TResume> = {
   'HOME-andres-navarro': {
     id: 'HOME-andres-navarro',
     title: `Andres Navarro's Website`,
-    resume: `Experience work for more than five (5) years in full-stack development, videogames and augmented reality. Blockchain enthusiast.
-      Core Strengths: Software Development, Strategic Planning, Process Improvement, Business Integration, Team Development
-      High Integrity and Honesty, Innovates, Solves Problems and Analyzes Issues, Proactivity, Responsibility, Confident,
-      Communicative, Patience, Work under pressure, and Fast Learning.`,
+    resume: [
+      `Work experience for more than three (3) years in videogames and augmented reality. Blockchain and NFT enthusiast. Background working in full-stack development.`,
+      `Core Strengths:`,
+      `Teamwork, Fast Learning, Problem Solver, Proactive, Confident, Patient, Responsible, Honest, Innovator, Analytical Thinker, and Work under pressure.`,
+    ],
     skills: {
       languages: ['Spanish', 'English'],
-      code: ['C#', 'Javascript', 'Solidity', 'HTML', 'CSS', 'Python'],
+      code: ['C#', 'Javascript', 'C++', 'Solidity', 'HTML', 'CSS', 'Python'],
       'game Engines': ['Unity3D'],
       'augmented Reality': ['Vuforia'],
       '3d Modeling': ['Blender3D'],

@@ -27,18 +27,18 @@ const Navbar = () => {
           </Link>
           <Dropdown item text="Portfolio">
             <Dropdown.Menu style={{ backgroundColor: '#1b2a68' }}>
-              <Link href="/fullstack" passHref>
-                <Dropdown.Item
-                  icon="globe"
-                  text="Web Development - Blockchain"
-                  active={pathname === '/fullstack'}
-                />
-              </Link>
               <Link href="/videogames" passHref>
                 <Dropdown.Item
                   icon="gamepad"
                   text="Video Games - Augmented Reality"
                   active={pathname === '/videogames'}
+                />
+              </Link>
+              <Link href="/fullstack" passHref>
+                <Dropdown.Item
+                  icon="globe"
+                  text="Web Development - Blockchain"
+                  active={pathname === '/fullstack'}
                 />
               </Link>
               <Link href="/3dmodels" passHref>

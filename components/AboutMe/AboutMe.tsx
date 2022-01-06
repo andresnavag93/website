@@ -24,7 +24,11 @@ const AboutMe = ({ resume, ...otherFeatures }: TResume) => {
       <Header as="h2" style={{ marginTop: '3rem' }}>
         Resume
       </Header>
-      <p>{resume}</p>
+      <p>{resume[0]}</p>
+      <p>
+        <b>{resume[1]}</b>
+      </p>
+      <p>{resume[2]}</p>
       <br />
       <Table celled>
         <Table.Header>
