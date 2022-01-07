@@ -18,22 +18,6 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       ],
     },
   },
-  'VG-mercantil-ar-holidays': {
-    id: 'VG-mercantil-ar-holidays',
-    title: 'Happy Holidays Mercantil',
-    subtitle: 'Mobile App',
-    image: '/images/videogames/mercantil-ar-holidays.jpg',
-    area: { name: 'Augmented Reality', color: 'green' },
-    date: '2020',
-    features: {
-      client: 'Mercantil National Bank',
-      classification: 'Entertainment',
-      'developed in': 'Wayu Inc.',
-      description: `Christmas Mobile app with Augmented Reality for Mercantil Bank clients. This app allows taking pictures with different 3D animated characters and sharing them on social networks. In addition, it has additional functionalities where the character can be moved, rotated, and scaled in space according to how you want it to appear in the photo.`,
-      technologies: ['Unity 3D', 'Vuforia'],
-      links: [['Video Clip', 'https://youtu.be/yNReXfp_ugc']],
-    },
-  },
   'VG-wayu-dash': {
     id: 'VG-wayu-dash',
     title: 'Wayu Dash',
@@ -48,40 +32,6 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       description: `Mobile platform game that consists of obtaining the highest possible score, catching coins, and overcoming obstacles of different worlds in order to compete for the first place with other players.`,
       technologies: ['Unity 3D'],
       links: [['Video Clip', 'https://youtu.be/20s160Zu9Tk']],
-    },
-  },
-  'VG-star-wars': {
-    id: 'VG-star-wars',
-    title: 'Star Wars',
-    subtitle: 'Game for Desktop',
-    image: '/images/videogames/star-wars.jpg',
-    area: { name: 'Video Game', color: 'brown' },
-    date: '2017',
-    features: {
-      classification: 'Platformer',
-      description: `Desktop video game consisting of collecting coins, passing
-        through tunnels, and overcoming or dodging animated obstacles/animals through
-        three different worlds of ice, desert, and fire, to reach the final goal (Education Purposes).`,
-      technologies: ['Unity 3D', 'Maya'],
-      links: [
-        ['Github', 'https://github.com/andresnavag93/star-wars'],
-        ['Video Clip', 'https://youtu.be/j0jVuYq4nSk'],
-      ],
-    },
-  },
-  'VG-awesome-runner': {
-    id: 'VG-awesome-runner',
-    title: 'Awesome Runner',
-    subtitle: 'Mobile Game',
-    image: '/images/videogames/awesome-runner.jpg',
-    area: { name: 'Video Game', color: 'brown' },
-    date: '2020',
-    features: {
-      classification: 'Platformer',
-      description: `3D platform game where a frog spaceman runs endless through a city, jumping platforms and avoiding enemies (Education Purposes).`,
-      technologies: ['Unity 3D'],
-
-      links: [['Github', 'https://github.com/andresnavag93/awesome-runner']],
     },
   },
   'VG-learning-with-ar': {
@@ -100,6 +50,57 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       links: [['Video Clip', 'https://youtu.be/slQDzWXIMT0']],
     },
   },
+  'VG-roller-madness': {
+    id: 'VG-roller-madness',
+    title: 'Roller Madness',
+    subtitle: 'Game for Desktop',
+    image: '/images/videogames/roller-madness.jpg',
+    area: { name: 'Video Game', color: 'brown' },
+    date: '2018',
+    features: {
+      classification: 'Puzzle',
+      description: `3D video game that consists of collecting a certain amount of
+        coins depending on the level andavoiding or dodging the animated blocks so
+        they don't destroy you (Education Purposes).`,
+      technologies: ['Unity 3D'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/roller-madness'],
+        ['Video Clip', 'https://youtu.be/ncf9bPmcjB0'],
+      ],
+    },
+  },
+  'VG-box-shooter': {
+    id: 'VG-box-shooter',
+    title: 'Box shooter',
+    subtitle: 'Game for Desktop',
+    image: '/images/videogames/box-shooter.jpg',
+    area: { name: 'Video Game', color: 'brown' },
+    date: '2018',
+    features: {
+      classification: 'Puzzle',
+      description: `3D video game consisting of earning points by shooting different cubes in a limited time. The yellow ones take away time, the white ones add time and the green ones add points (Education Purposes)`,
+      technologies: ['Unity 3D'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/box-shooter'],
+        ['Video Clip', 'https://youtu.be/NrT9TLQ41uY'],
+      ],
+    },
+  },
+  'VG-awesome-runner': {
+    id: 'VG-awesome-runner',
+    title: 'Awesome Runner',
+    subtitle: 'Mobile Game',
+    image: '/images/videogames/awesome-runner.jpg',
+    area: { name: 'Video Game', color: 'brown' },
+    date: '2020',
+    features: {
+      classification: 'Platformer',
+      description: `3D platform game where a frog spaceman runs endless through a city, jumping platforms and avoiding enemies (Education Purposes).`,
+      technologies: ['Unity 3D'],
+
+      links: [['Github', 'https://github.com/andresnavag93/awesome-runner']],
+    },
+  },
   'VG-wayu-business-ar': {
     id: 'VG-wayu-business-ar',
     title: 'Wayu Business Card',
@@ -116,6 +117,22 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
         Includes an animated company logo, social media, and shorts portfolio videos.`,
       technologies: ['Unity 3D', 'Vuforia', 'Blender 3D'],
       links: [['Video Clip', 'https://youtu.be/csGzL_KCKqA']],
+    },
+  },
+  'VG-mercantil-ar-holidays': {
+    id: 'VG-mercantil-ar-holidays',
+    title: 'Happy Holidays Mercantil',
+    subtitle: 'Mobile App',
+    image: '/images/videogames/mercantil-ar-holidays.jpg',
+    area: { name: 'Augmented Reality', color: 'green' },
+    date: '2020',
+    features: {
+      client: 'Mercantil National Bank',
+      classification: 'Entertainment',
+      'developed in': 'Wayu Inc.',
+      description: `Christmas Mobile app with Augmented Reality for Mercantil Bank clients. This app allows taking pictures with different 3D animated characters and sharing them on social networks. In addition, it has additional functionalities where the character can be moved, rotated, and scaled in space according to how you want it to appear in the photo.`,
+      technologies: ['Unity 3D', 'Vuforia'],
+      links: [['Video Clip', 'https://youtu.be/yNReXfp_ugc']],
     },
   },
   'VG-space-man': {
@@ -169,40 +186,22 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       ],
     },
   },
-  'VG-roller-madness': {
-    id: 'VG-roller-madness',
-    title: 'Roller Madness',
-    subtitle: 'Game for Desktop',
-    image: '/images/videogames/roller-madness.jpg',
-    area: { name: 'Video Game', color: 'brown' },
-    date: '2018',
+  'VG-memoriar': {
+    id: 'VG-memoriar',
+    title: 'Memory Ar',
+    subtitle: 'Mobile App',
+    image: '/images/videogames/memoriar.jpg',
+    area: { name: 'Augmented Reality', color: 'green' },
+    date: '2017',
     features: {
-      classification: 'Puzzle',
-      description: `3D video game that consists of collecting a certain amount of
-        coins depending on the level andavoiding or dodging the animated blocks so
-        they don't destroy you (Education Purposes).`,
-      technologies: ['Unity 3D'],
-      links: [
-        ['Github', 'https://github.com/andresnavag93/roller-madness'],
-        ['Video Clip', 'https://youtu.be/ncf9bPmcjB0'],
-      ],
-    },
-  },
-  'VG-box-shooter': {
-    id: 'VG-box-shooter',
-    title: 'Box shooter',
-    subtitle: 'Game for Desktop',
-    image: '/images/videogames/box-shooter.jpg',
-    area: { name: 'Video Game', color: 'brown' },
-    date: '2018',
-    features: {
-      classification: 'Puzzle',
-      description: `3D video game consisting of earning points by shooting different cubes in a limited time. The yellow ones take away time, the white ones add time and the green ones add points (Education Purposes)`,
-      technologies: ['Unity 3D'],
-      links: [
-        ['Github', 'https://github.com/andresnavag93/box-shooter'],
-        ['Video Clip', 'https://youtu.be/NrT9TLQ41uY'],
-      ],
+      classification: 'Education / Entertainment',
+      description: `A mobile game that allows you to play the classic memory game with
+        augmented reality using different animal marks. It consists of seeing the animals
+        in 3D, and once any pair of cards is discovered, the app shows an animation
+        corresponding to the animal paired. There are pairs of cats, tigers, horses,
+        lizards, and rhinos (Education Purposes).`,
+      technologies: ['Unity 3D', 'Vuforia'],
+      links: [['Video Clip', 'https://youtu.be/Kgtr5BIKgy8']],
     },
   },
   'VG-solar-system': {
@@ -224,22 +223,23 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       ],
     },
   },
-  'VG-memoriar': {
-    id: 'VG-memoriar',
-    title: 'Memory Ar',
-    subtitle: 'Mobile App',
-    image: '/images/videogames/memoriar.jpg',
-    area: { name: 'Augmented Reality', color: 'green' },
+  'VG-star-wars': {
+    id: 'VG-star-wars',
+    title: 'Star Wars',
+    subtitle: 'Game for Desktop',
+    image: '/images/videogames/star-wars.jpg',
+    area: { name: 'Video Game', color: 'brown' },
     date: '2017',
     features: {
-      classification: 'Education / Entertainment',
-      description: `A mobile game that allows you to play the classic memory game with
-        augmented reality using different animal marks. It consists of seeing the animals
-        in 3D, and once any pair of cards is discovered, the app shows an animation
-        corresponding to the animal paired. There are pairs of cats, tigers, horses,
-        lizards, and rhinos (Education Purposes).`,
-      technologies: ['Unity 3D', 'Vuforia'],
-      links: [['Video Clip', 'https://youtu.be/Kgtr5BIKgy8']],
+      classification: 'Platformer',
+      description: `Desktop video game consisting of collecting coins, passing
+        through tunnels, and overcoming or dodging animated obstacles/animals through
+        three different worlds of ice, desert, and fire, to reach the final goal (Education Purposes).`,
+      technologies: ['Unity 3D', 'Maya'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/star-wars'],
+        ['Video Clip', 'https://youtu.be/j0jVuYq4nSk'],
+      ],
     },
   },
   'VG-puzzle-ball': {
