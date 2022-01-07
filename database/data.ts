@@ -6,7 +6,7 @@ export const dataAndres: Record<TResumeId, TResume> = {
     id: 'HOME-andres-navarro',
     title: `Andres Navarro's Website`,
     resume: [
-      `Work experience for more than two (2) years in videogames and augmented reality. Blockchain and NFT enthusiast. Background working in full-stack development.`,
+      `Three (3) years of work experience in video games and augmented reality. Blockchain and NFT enthusiast. Background working in full-stack development.`,
       `Core Strengths:`,
       `Teamwork, Fast Learning, Problem Solver, Proactive, Confident, Patient, Responsible, Honest, Innovator, Analytical Thinker, and Work under pressure.`,
     ],

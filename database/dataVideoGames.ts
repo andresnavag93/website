@@ -45,9 +45,59 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       client: 'Wayu Inc.',
       classification: 'Plataformer',
       'developed in': 'Wayu Inc.',
-      description: `Mobile platform game that consists of obtaining the highest possible score, catching coins, and overcoming obstacles of different worlds in order to compete for the first place with other players..`,
+      description: `Mobile platform game that consists of obtaining the highest possible score, catching coins, and overcoming obstacles of different worlds in order to compete for the first place with other players.`,
       technologies: ['Unity 3D'],
       links: [['Video Clip', 'https://youtu.be/20s160Zu9Tk']],
+    },
+  },
+  'VG-star-wars': {
+    id: 'VG-star-wars',
+    title: 'Star Wars',
+    subtitle: 'Game for Desktop',
+    image: '/images/videogames/star-wars.jpg',
+    area: { name: 'Video Game', color: 'brown' },
+    date: '2017',
+    features: {
+      classification: 'Platformer',
+      description: `Desktop video game consisting of collecting coins, passing
+        through tunnels, and overcoming or dodging animated obstacles/animals through
+        three different worlds of ice, desert, and fire, to reach the final goal (Education Purposes).`,
+      technologies: ['Unity 3D', 'Maya'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/star-wars'],
+        ['Video Clip', 'https://youtu.be/j0jVuYq4nSk'],
+      ],
+    },
+  },
+  'VG-awesome-runner': {
+    id: 'VG-awesome-runner',
+    title: 'Awesome Runner',
+    subtitle: 'Mobile Game',
+    image: '/images/videogames/awesome-runner.jpg',
+    area: { name: 'Video Game', color: 'brown' },
+    date: '2020',
+    features: {
+      classification: 'Platformer',
+      description: `3D platform game where a frog spaceman runs endless through a city, jumping platforms and avoiding enemies (Education Purposes).`,
+      technologies: ['Unity 3D'],
+
+      links: [['Github', 'https://github.com/andresnavag93/awesome-runner']],
+    },
+  },
+  'VG-learning-with-ar': {
+    id: 'VG-learning-with-ar',
+    title: 'Learning AR With Armando',
+    subtitle: 'Mobile App',
+    image: '/images/videogames/learning-with-ar.jpg',
+    area: { name: 'Augmented Reality', color: 'green' },
+    date: '2017',
+    features: {
+      classification: 'Education',
+      description: `A mobile game with augmented reality that allows children under
+        5 years old to count the numbers, how to trace and write, associations with the
+        same numbers of fruits, adds and subtracts (Education Purposes).`,
+      technologies: ['Unity 3D', 'Vuforia'],
+      links: [['Video Clip', 'https://youtu.be/slQDzWXIMT0']],
     },
   },
   'VG-wayu-business-ar': {
@@ -81,51 +131,6 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       technologies: ['Unity 3D'],
 
       links: [['Github', 'https://github.com/andresnavag93/space-man']],
-    },
-  },
-  'VG-awesome-runner': {
-    id: 'VG-awesome-runner',
-    title: 'Awesome Runner',
-    subtitle: 'Mobile Game',
-    image: '/images/videogames/awesome-runner.jpg',
-    area: { name: 'Video Game', color: 'brown' },
-    date: '2020',
-    features: {
-      classification: 'Platformer',
-      description: `3D platform game where a frog spaceman runs endless through a city, jumping platforms and avoiding enemies (Education Purposes).`,
-      technologies: ['Unity 3D'],
-
-      links: [['Github', 'https://github.com/andresnavag93/awesome-runner']],
-    },
-  },
-  'VG-puzzle-ball': {
-    id: 'VG-puzzle-ball',
-    title: 'Puzzle Ball',
-    subtitle: 'Mobile Game',
-    image: '/images/videogames/puzzle-ball.jpg',
-    area: { name: 'Video Game', color: 'brown' },
-    date: '2020',
-    features: {
-      classification: 'Puzzle',
-      description: `3D puzzle levels (Education Purposes).`,
-      technologies: ['Unity 3D'],
-
-      links: [['Github', 'https://github.com/andresnavag93/puzzle-ball']],
-    },
-  },
-  'VG-zigzag-ball': {
-    id: 'VG-zigzag-ball',
-    title: 'ZigZag Ball',
-    subtitle: 'Mobile Game',
-    image: '/images/videogames/zigzag-ball.jpg',
-    area: { name: 'Video Game', color: 'brown' },
-    date: '2020',
-    features: {
-      classification: 'Platformer',
-      description: `3D platform game where a ball rolls endless through falling platforms(Education Purposes).`,
-      technologies: ['Unity 3D'],
-
-      links: [['Github', 'https://github.com/andresnavag93/zigzag-ball']],
     },
   },
   'VG-spaceman': {
@@ -219,22 +224,6 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       ],
     },
   },
-  'VG-learning-with-ar': {
-    id: 'VG-learning-with-ar',
-    title: 'Learning AR With Armando',
-    subtitle: 'Mobile App',
-    image: '/images/videogames/learning-with-ar.jpg',
-    area: { name: 'Augmented Reality', color: 'green' },
-    date: '2017',
-    features: {
-      classification: 'Education',
-      description: `A mobile game with augmented reality that allows children under
-        5 years old to count the numbers, how to trace and write, associations with the
-        same numbers of fruits, adds and subtracts (Education Purposes).`,
-      technologies: ['Unity 3D', 'Vuforia'],
-      links: [['Video Clip', 'https://youtu.be/slQDzWXIMT0']],
-    },
-  },
   'VG-memoriar': {
     id: 'VG-memoriar',
     title: 'Memory Ar',
@@ -253,23 +242,34 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
       links: [['Video Clip', 'https://youtu.be/Kgtr5BIKgy8']],
     },
   },
-  'VG-star-wars': {
-    id: 'VG-star-wars',
-    title: 'Star Wars',
-    subtitle: 'Game for Desktop',
-    image: '/images/videogames/star-wars.jpg',
+  'VG-puzzle-ball': {
+    id: 'VG-puzzle-ball',
+    title: 'Puzzle Ball',
+    subtitle: 'Mobile Game',
+    image: '/images/videogames/puzzle-ball.jpg',
     area: { name: 'Video Game', color: 'brown' },
-    date: '2017',
+    date: '2020',
+    features: {
+      classification: 'Puzzle',
+      description: `3D puzzle levels (Education Purposes).`,
+      technologies: ['Unity 3D'],
+
+      links: [['Github', 'https://github.com/andresnavag93/puzzle-ball']],
+    },
+  },
+  'VG-zigzag-ball': {
+    id: 'VG-zigzag-ball',
+    title: 'ZigZag Ball',
+    subtitle: 'Mobile Game',
+    image: '/images/videogames/zigzag-ball.jpg',
+    area: { name: 'Video Game', color: 'brown' },
+    date: '2020',
     features: {
       classification: 'Platformer',
-      description: `Desktop video game consisting of collecting coins, passing
-        through tunnels, and overcoming or dodging animated obstacles/animals through
-        three different worlds of ice, desert, and fire, to reach the final goal (Education Purposes).`,
-      technologies: ['Unity 3D', 'Maya'],
-      links: [
-        ['Github', 'https://github.com/andresnavag93/star-wars'],
-        ['Video Clip', 'https://youtu.be/j0jVuYq4nSk'],
-      ],
+      description: `3D platform game where a ball rolls endless through falling platforms(Education Purposes).`,
+      technologies: ['Unity 3D'],
+
+      links: [['Github', 'https://github.com/andresnavag93/zigzag-ball']],
     },
   },
 }
