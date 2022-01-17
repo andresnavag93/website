@@ -6,9 +6,11 @@ export const dataAndres: Record<TResumeId, TResume> = {
     id: 'HOME-andres-navarro',
     title: `Andres Navarro's Website`,
     resume: [
-      `Qualified, dedicated and skilled developer with three (3) years of work experience 
-      in video games and augmented reality. Several projects developed using Unity 3D as the main tool. 
-      Background working in full-stack development. VR, Blockchain and NFT enthusiast.`,
+      `Software Developer with five (5) years of work experience. 
+      Three (3) years as a Video Games and Augmented Reality Developer using Unity 3D and Vuforia. 
+      Background as a Full-Stack Developer. 
+      XR, Blockchain and NFT enthusiast. 
+      Nowadays, I am looking for a job as a Unity 3D Developer in the video games industry.`,
     ],
     skills: {
       'game Engines': ['Unity3D'],
@@ -16,6 +18,7 @@ export const dataAndres: Record<TResumeId, TResume> = {
       code: ['C#', 'C++', 'Javascript', 'HTML', 'CSS', 'Python'],
       'front-End': ['React', 'Next.Js'],
       '3d Modeling': ['Blender3D'],
+      multiplayer: ['Photon', 'Mirror'],
       'back-End': ['Node', 'Express'],
       design: ['Figma', 'Illustrator'],
       'video Editing': ['PremierPro'],
