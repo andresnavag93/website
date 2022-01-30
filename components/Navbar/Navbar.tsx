@@ -12,11 +12,11 @@ const Navbar = () => {
       borderless
       as="header"
       inverted
-      style={{ backgroundColor: '#1b2a68' }}
+      style={{ backgroundColor: '#16072b' }}
     >
       <Container text>
         <Menu.Menu position="left">
-          <Link href="/" passHref>
+          {/* <Link href="/" passHref>
             <Menu.Item
               active={pathname === '/'}
               title="Andres Navarro Website"
@@ -24,13 +24,13 @@ const Navbar = () => {
             >
               Home
             </Menu.Item>
-          </Link>
+          </Link> */}
           <Dropdown item text="Portfolio">
-            <Dropdown.Menu style={{ backgroundColor: '#1b2a68' }}>
+            <Dropdown.Menu style={{ backgroundColor: '#16072b' }}>
               <Link href="/videogames" passHref>
                 <Dropdown.Item
                   icon="gamepad"
-                  text="Video Games - Augmented Reality"
+                  text="Video Games - Extended Reality"
                   active={pathname === '/videogames'}
                 />
               </Link>

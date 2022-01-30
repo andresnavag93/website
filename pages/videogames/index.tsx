@@ -2,7 +2,7 @@ import React from 'react'
 import { Header } from 'semantic-ui-react'
 import { GetStaticProps } from 'next'
 import Layout from '@components/Layout/Layout'
-import ProjectList from '@components/ProjectList/ProjectList'
+import GameList from '@components/GameList/GameList'
 import { dataVideoGames } from '../../database/dataVideoGames'
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -18,9 +18,9 @@ const HomePage = ({ projectList }: { projectList: TProject[] }) => {
   return (
     <Layout>
       <Header as="h1" textAlign="center" style={{ margin: '3rem' }}>
-        Video Games - Augmented Reality
+        Video Games - Extended Reality
       </Header>
-      <ProjectList projects={projectList} />
+      <GameList projects={projectList} />
       <br />
       <style jsx>{`
         section {

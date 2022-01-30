@@ -48,7 +48,7 @@ const ProjectSummary = ({ project }: ProjectSummaryProps) => (
             >
               {project.area.name}
             </Label>
-            <Label>{project.date}</Label>
+            {/* <Label>{project.date}</Label> */}
           </Item.Description>
         </Item.Content>
       </Item>

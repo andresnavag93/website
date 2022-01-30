@@ -27,7 +27,7 @@ const mapProjectsToCards = (projects: TProject[]) =>
               >
                 {name}
               </Label>
-              <Label>{date}</Label>
+              {/* <Label>{date}</Label> */}
             </>
           }
         />
