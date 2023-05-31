@@ -17,6 +17,7 @@ export const dataVideoGames: Record<TProjectId, TProject> = {
     features: {
       classification: 'Idle/Clicker game',
       description: ``,
+      'developed in': 'Gamaga',
       technologies: ['Unity'],
       links: [
         ['Demo', 'https://www.youtube.com/watch?v=Xj-hlHuhPiQ'],
