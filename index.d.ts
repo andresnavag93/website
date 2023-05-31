@@ -28,7 +28,7 @@ type TProjectAreaFeature = {
 type TProjectFeatures = {
   description: string
   'developed in'?: string
-  links: Array<Array<string>>
+  links?: Array<Array<string>>
   technologies: Array<string>
   client?: string
   classification?: string
