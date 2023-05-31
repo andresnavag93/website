@@ -1,4 +1,33 @@
 export const dataVideoGames: Record<TProjectId, TProject> = {
+  'VG-clicker-caper': {
+    id: 'VG-clicker-caper',
+    title: 'Clicker Caper',
+    subtitle: 'Idle/Clicker game',
+    image: '/images/videogames/clicker-caper.png',
+    area: { name: 'Videogame', color: 'brown' },
+    links: [
+      ['Demo', 'https://www.youtube.com/watch?v=Xj-hlHuhPiQ'],
+      ['iOS', 'https://apps.apple.com/de/app/clicker-caper/id1576421405'],
+      [
+        'Android',
+        'https://play.google.com/store/apps/details?id=com.kongregate.mobile.idleheist.google&pli=1',
+      ],
+    ],
+    date: '2022',
+    features: {
+      classification: 'Idle/Clicker game',
+      description: ``,
+      technologies: ['Unity'],
+      links: [
+        ['Demo', 'https://www.youtube.com/watch?v=Xj-hlHuhPiQ'],
+        ['iOS', 'https://apps.apple.com/de/app/clicker-caper/id1576421405'],
+        [
+          'Android',
+          'https://play.google.com/store/apps/details?id=com.kongregate.mobile.idleheist.google&pli=1',
+        ],
+      ],
+    },
+  },
   'VG-spinner-ar-multiplayer': {
     id: 'VG-spinner-ar-multiplayer',
     title: 'Spinner AR Multiplayer',

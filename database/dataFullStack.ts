@@ -1,4 +1,37 @@
 export const dataFullStack: Record<TProjectId, TProject> = {
+  'FS-google-clone': {
+    id: 'FS-google-clone',
+    title: 'Google Clone',
+    subtitle: 'Website',
+    image: '/images/fullstack/google-clone.png',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2023',
+    features: {
+      classification: 'Website',
+      description: `Replica of the google home page for practicing HTML and CSS.`,
+      technologies: ['HTML', 'Javascript', 'CSS'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/google-clone'],
+        ['Web', 'https://andresnavag93.github.io/google-clone/'],
+      ],
+    },
+  },
+  'FS-walmart-apct-aphub': {
+    id: 'FS-walmart-apct-aphub',
+    title: 'Walmart (APCT - APIHUB)',
+    subtitle: 'Websystem',
+    image: '/images/fullstack/walmart-apct-aphub.png',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2022',
+    features: {
+      client: 'Walmart',
+      classification: 'APCT - APHUB System',
+      'developed in': 'Applaudo Studios',
+      description: `Web system for the listing of orders for APCT. The overall project was divided into two phases. The first one was the construction of the UI for the search by id in which the information is displayed and imported into excel. The second phase was the construction of an APHUB that will serve as a gateway to APCT and other applications in the walmart ecosystem. `,
+      technologies: ['React', 'Redux', 'JavaScript', 'HTML', 'CSS'],
+      links: [],
+    },
+  },
   'FS-marvel-world': {
     id: 'FS-marvel-world',
     title: 'Marvel World',
@@ -21,7 +54,7 @@ export const dataFullStack: Record<TProjectId, TProject> = {
   },
   'FS-walmart-cill': {
     id: 'FS-walmart-cill',
-    title: 'Walmart Cill',
+    title: 'Walmart (Cill)',
     subtitle: 'Websystem',
     image: '/images/fullstack/walmart-cill.jpg',
     area: { name: 'Front-End', color: 'blue' },
@@ -33,6 +66,23 @@ export const dataFullStack: Record<TProjectId, TProject> = {
       description: `A system dedicated to internal error handling at Walmart. The system includes an advanced search, a complete list of errors, a detailed error view, error filters or attributes, and a help page.`,
       technologies: ['Electrode.js', 'Redux'],
       links: [],
+    },
+  },
+  'FS-mokepon': {
+    id: 'FS-mokepon',
+    title: 'Mokepon',
+    subtitle: 'Website',
+    image: '/images/fullstack/mokepon.png',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2023',
+    features: {
+      classification: 'Website - Videogame',
+      description: `Fun simulation of the classic game of rock, paper and scissors disguised as animals. You can select an animal, move on the board and choose the powers to fight.`,
+      technologies: ['HTML', 'Javascript', 'CSS'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/mokepon'],
+        ['Web', 'https://andresnavag93.github.io/mokepon/'],
+      ],
     },
   },
   'FS-platzi-punks': {
