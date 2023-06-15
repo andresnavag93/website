@@ -40,8 +40,9 @@ type TProject = {
   subtitle: string
   image: Url
   area: TProjectAreaFeature
-  date: string
+  date?: string
   features: TProjectFeatures
+  links?: Array<Array<string>>
 }
 
 type TModel = {
@@ -80,7 +81,7 @@ type TResumeSkills = {
 type TResume = {
   id: TResumeId
   title: string
-  resume: string
+  resume: string[]
   skills: TResumeFeatures
 }
 

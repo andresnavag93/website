@@ -10,7 +10,7 @@ const Footer = () => (
       padding: '4em 0em',
       marginTop: '3em',
       borderTop: '1px solid #f2f2f2',
-      backgroundColor: '#1b2a68',
+      backgroundColor: '#16072b',
     }}
   >
     <Container text inverted>
@@ -55,6 +55,15 @@ const Footer = () => (
               style={{ display: 'flex', justifyContent: 'center' }}
             >
               {/* <List horizontal> */}
+              <List.Item
+                icon="game"
+                style={{ display: 'flex' }}
+                content={
+                  <a href="https://andresnavag93.itch.io/" target="_blank">
+                    Itch.Io
+                  </a>
+                }
+              />
               <List.Item
                 icon="youtube"
                 style={{ display: 'flex' }}

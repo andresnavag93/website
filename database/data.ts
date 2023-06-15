@@ -5,21 +5,24 @@ export const dataAndres: Record<TResumeId, TResume> = {
   'HOME-andres-navarro': {
     id: 'HOME-andres-navarro',
     title: `Andres Navarro's Website`,
-    resume: `Experience work for more than seven (7) years in full-stack development, videogames and augmented reality. Blockchain enthusiast.
-      Core Strengths: Software Development, Strategic Planning, Process Improvement, Business Integration, Team Development
-      High Integrity and Honesty, Innovates, Solves Problems and Analyzes Issues, Proactivity, Responsibility, Confident,
-      Communicative, Patience, Work under pressure, and Fast Learning.`,
+    resume: [
+      `Software Developer with five (5) years of work experience. 
+      Three (3) years as a Video Games and Augmented Reality Developer using Unity 3D and Vuforia. 
+      Background as a Full-Stack Developer. 
+      XR, Blockchain and NFT enthusiast. 
+      Nowadays, I am looking for a job as a Unity 3D Developer in the video games industry.`,
+    ],
     skills: {
-      languages: ['Spanish', 'English'],
-      code: ['C#', 'Javascript', 'Solidity', 'HTML', 'CSS', 'Python'],
       'game Engines': ['Unity3D'],
       'augmented Reality': ['Vuforia'],
-      '3d Modeling': ['Blender3D'],
-      dapp: ['Truffle', 'Metamask', 'Hardhat', 'Web3.js'],
+      code: ['C#', 'C++', 'Javascript', 'HTML', 'CSS', 'Python'],
       'front-End': ['React', 'Next.Js'],
+      '3d Modeling': ['Blender3D'],
+      multiplayer: ['Photon', 'Mirror'],
       'back-End': ['Node', 'Express'],
       design: ['Figma', 'Illustrator'],
       'video Editing': ['PremierPro'],
+      dapp: ['Truffle', 'Metamask', 'Hardhat', 'Web3.js', 'Solidity'],
       devOps: [
         'AWS',
         'Route53',
@@ -30,6 +33,7 @@ export const dataAndres: Record<TResumeId, TResume> = {
         'Heroku',
       ],
       databases: ['Mongo', 'PostgreSql', 'MySql'],
+      languages: ['Spanish', 'English'],
     },
   },
 }
