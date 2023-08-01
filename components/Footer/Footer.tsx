@@ -10,7 +10,7 @@ const Footer = () => (
       padding: '4em 0em',
       marginTop: '3em',
       borderTop: '1px solid #f2f2f2',
-      backgroundColor: '#16072b',
+      backgroundColor: '#121212',
     }}
   >
     <Container text inverted>

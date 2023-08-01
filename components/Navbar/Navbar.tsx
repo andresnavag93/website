@@ -12,7 +12,7 @@ const Navbar = () => {
       borderless
       as="header"
       inverted
-      style={{ backgroundColor: '#16072b' }}
+      style={{ backgroundColor: '#121212' }}
     >
       <Container text>
         <Menu.Menu position="left">
@@ -26,7 +26,7 @@ const Navbar = () => {
             </Menu.Item>
           </Link> */}
           <Dropdown item text="Portfolio">
-            <Dropdown.Menu style={{ backgroundColor: '#16072b' }}>
+            <Dropdown.Menu style={{ backgroundColor: '#121212' }}>
               <Link href="/fullstack" passHref>
                 <Dropdown.Item
                   icon="globe"
