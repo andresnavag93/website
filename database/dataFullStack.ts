@@ -1,21 +1,24 @@
 export const dataFullStack: Record<TProjectId, TProject> = {
-  'FS-google-clone': {
-    id: 'FS-google-clone',
-    title: 'Google Clone',
-    subtitle: 'Website',
-    image: '/images/fullstack/google-clone.png',
+  'FS-wayu-mx': {
+    id: 'FS-wayu-mx',
+    title: 'Wayu Inc (Mexico)',
+    subtitle: 'Landing Web',
+    image: '/images/fullstack/wayu-mx.jpg',
     area: { name: 'Front-End', color: 'blue' },
-    date: '2023',
+    date: '2019',
     features: {
-      classification: 'Website',
-      description: `Replica of the google home page for practicing HTML and CSS.`,
-      technologies: ['HTML', 'Javascript', 'CSS'],
+      client: 'Wayu Inc.',
+      classification: 'Marketing',
+      'developed in': 'Wayu Inc.',
+      description: `Corporate website with landing web structure dedicated to digital marketing. You can view the different sections of who we are, descriptions of products or plans, and testimonials from companies that have enjoyed the digital marketing service.`,
+      technologies: ['Javascript', 'React.Js'],
       links: [
-        ['Github', 'https://github.com/andresnavag93/google-clone'],
-        ['Web', 'https://andresnavag93.github.io/google-clone/'],
+        ['Github', 'https://github.com/andresnavag93/mexico-wayuinc'],
+        ['Web', 'http://andresnavag93.github.io/mexico-wayuinc'],
       ],
     },
   },
+
   'FS-walmart-apct-aphub': {
     id: 'FS-walmart-apct-aphub',
     title: 'Walmart (APCT - APIHUB)',
@@ -52,6 +55,47 @@ export const dataFullStack: Record<TProjectId, TProject> = {
       links: [['Github', 'https://github.com/andresnavag93/marvel-world']],
     },
   },
+  'FS-nativapps-tutorials': {
+    id: 'FS-nativapps-tutorials',
+    title: 'NativApps Tutorials',
+    subtitle: 'Landing Web',
+    image: '/images/fullstack/nativapps-tutorials.jpg',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2020',
+    features: {
+      classification: 'Education & Tutorials',
+      description: `Landing web of services dedicated to the exhibition of online tutorials.
+        Informative banners, client logos, plans and promotions are displayed.`,
+      technologies: ['React.js', 'Webpack', 'AWS'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/nativapps-tutorials'],
+        ['Web', 'https://andresnavag93.github.io/nativapps-tutorials/'],
+      ],
+    },
+  },
+  'FS-wayu': {
+    id: 'FS-wayu',
+    title: 'Wayu Inc',
+    subtitle: 'Website',
+    image: '/images/fullstack/wayu.jpg',
+    area: { name: 'FrontEnd', color: 'blue' },
+    date: '2018',
+    features: {
+      client: 'Wayu Inc.',
+      classification: 'Software & Marketing',
+      'developed in': 'Wayu Inc.',
+      description: `Corporate website to offer different development services in
+        technology, digital marketing and design. It also has a contact form, about us, and
+        the different technologies with which they have worked.`,
+      technologies: ['Javascript', 'Angular'],
+      links: [
+        [
+          'Web',
+          'http://test.wayuinc-webpage.s3-website-us-east-1.amazonaws.com',
+        ],
+      ],
+    },
+  },
   'FS-walmart-cill': {
     id: 'FS-walmart-cill',
     title: 'Walmart (Cill)',
@@ -68,20 +112,36 @@ export const dataFullStack: Record<TProjectId, TProject> = {
       links: [],
     },
   },
-  'FS-mokepon': {
-    id: 'FS-mokepon',
-    title: 'Mokepon',
-    subtitle: 'Website',
-    image: '/images/fullstack/mokepon.png',
-    area: { name: 'Front-End', color: 'blue' },
-    date: '2023',
+
+  'FS-policies': {
+    id: 'FS-policies',
+    title: 'Microservices Policy System',
+    subtitle: 'Web System ',
+    image: '/images/fullstack/policies.jpg',
+    area: { name: 'Full Stack', color: 'brown' },
+    date: '2021',
     features: {
-      classification: 'Website - Videogame',
-      description: `Fun simulation of the classic game of rock, paper and scissors disguised as animals. You can select an animal, move on the board and choose the powers to fight.`,
-      technologies: ['HTML', 'Javascript', 'CSS'],
+      classification: 'Policies / Insurance',
+      description: `Vehicle policy system with microservices architecture. It has login, registration and views of clients, vehicles and policies.`,
+      technologies: ['Next.js', 'Node.js'],
+      links: [],
+    },
+  },
+  'FS-sloncare': {
+    id: 'FS-sloncare',
+    title: 'Sloncare',
+    subtitle: 'Health & Care System API',
+    image: '/images/fullstack/sloncare.jpg',
+    area: { name: 'Back-End', color: 'red' },
+    date: '2018',
+    features: {
+      client: 'Sloncare',
+      classification: 'Medical Care',
+      'developed in': 'Wayu Inc.',
+      description: `Health savings system with a payment gateway, where different users can obtain services from doctors and/or clinics such as medical appointments, surgical operations, emergency tickets, among others.`,
+      technologies: ['Ruby on Rails', 'PostgreSQL', 'AWS'],
       links: [
-        ['Github', 'https://github.com/andresnavag93/mokepon'],
-        ['Web', 'https://andresnavag93.github.io/mokepon/'],
+        ['Web', 'http://test-slon-care.s3-website.us-east-2.amazonaws.com/'],
       ],
     },
   },
@@ -113,20 +173,24 @@ export const dataFullStack: Record<TProjectId, TProject> = {
       ],
     },
   },
-  'FS-policies': {
-    id: 'FS-policies',
-    title: 'Microservices Policy System',
-    subtitle: 'Web System ',
-    image: '/images/fullstack/policies.jpg',
-    area: { name: 'Full Stack', color: 'brown' },
-    date: '2021',
+  'FS-mokepon': {
+    id: 'FS-mokepon',
+    title: 'Mokepon',
+    subtitle: 'Website',
+    image: '/images/fullstack/mokepon.png',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2023',
     features: {
-      classification: 'Policies / Insurance',
-      description: `Vehicle policy system with microservices architecture. It has login, registration and views of clients, vehicles and policies.`,
-      technologies: ['Next.js', 'Node.js'],
-      links: [],
+      classification: 'Website - Videogame',
+      description: `Fun simulation of the classic game of rock, paper and scissors disguised as animals. You can select an animal, move on the board and choose the powers to fight.`,
+      technologies: ['HTML', 'Javascript', 'CSS'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/mokepon'],
+        ['Web', 'https://andresnavag93.github.io/mokepon/'],
+      ],
     },
   },
+
   'FS-bison-gym': {
     id: 'FS-bison-gym',
     title: 'Bison Reserve',
@@ -143,84 +207,7 @@ export const dataFullStack: Record<TProjectId, TProject> = {
       links: [['Web', 'http://test-bison.s3-website-us-east-1.amazonaws.com']],
     },
   },
-  'FS-nativapps-tutorials': {
-    id: 'FS-nativapps-tutorials',
-    title: 'NativApps Tutorials',
-    subtitle: 'Landing Web',
-    image: '/images/fullstack/nativapps-tutorials.jpg',
-    area: { name: 'Front-End', color: 'blue' },
-    date: '2020',
-    features: {
-      classification: 'Education & Tutorials',
-      description: `Landing web of services dedicated to the exhibition of online tutorials.
-        Informative banners, client logos, plans and promotions are displayed.`,
-      technologies: ['React.js', 'Webpack', 'AWS'],
-      links: [
-        ['Github', 'https://github.com/andresnavag93/nativapps-tutorials'],
-        ['Web', 'https://andresnavag93.github.io/nativapps-tutorials/'],
-      ],
-    },
-  },
-  'FS-wayu-mx': {
-    id: 'FS-wayu-mx',
-    title: 'Wayu Inc (Mexico)',
-    subtitle: 'Landing Web',
-    image: '/images/fullstack/wayu-mx.jpg',
-    area: { name: 'Front-End', color: 'blue' },
-    date: '2019',
-    features: {
-      client: 'Wayu Inc.',
-      classification: 'Marketing',
-      'developed in': 'Wayu Inc.',
-      description: `Corporate website with landing web structure dedicated to digital marketing. You can view the different sections of who we are, descriptions of products or plans, and testimonials from companies that have enjoyed the digital marketing service.`,
-      technologies: ['Javascript', 'React.Js'],
-      links: [
-        ['Github', 'https://github.com/andresnavag93/mexico-wayuinc'],
-        ['Web', 'http://andresnavag93.github.io/mexico-wayuinc'],
-      ],
-    },
-  },
-  'FS-sloncare': {
-    id: 'FS-sloncare',
-    title: 'Sloncare',
-    subtitle: 'Health & Care System API',
-    image: '/images/fullstack/sloncare.jpg',
-    area: { name: 'Back-End', color: 'red' },
-    date: '2018',
-    features: {
-      client: 'Sloncare',
-      classification: 'Medical Care',
-      'developed in': 'Wayu Inc.',
-      description: `Health savings system with a payment gateway, where different users can obtain services from doctors and/or clinics such as medical appointments, surgical operations, emergency tickets, among others.`,
-      technologies: ['Ruby on Rails', 'PostgreSQL', 'AWS'],
-      links: [
-        ['Web', 'http://test-slon-care.s3-website.us-east-2.amazonaws.com/'],
-      ],
-    },
-  },
-  'FS-wayu': {
-    id: 'FS-wayu',
-    title: 'Wayu Inc',
-    subtitle: 'Website',
-    image: '/images/fullstack/wayu.jpg',
-    area: { name: 'FrontEnd', color: 'blue' },
-    date: '2018',
-    features: {
-      client: 'Wayu Inc.',
-      classification: 'Software & Marketing',
-      'developed in': 'Wayu Inc.',
-      description: `Corporate website to offer different development services in
-        technology, digital marketing and design. It also has a contact form, about us, and
-        the different technologies with which they have worked.`,
-      technologies: ['Javascript', 'Angular'],
-      links: [
-        [
-          'Web',
-          'http://test.wayuinc-webpage.s3-website-us-east-1.amazonaws.com',
-        ],
-      ],
-    },
-  },
+
   'FS-pavimenti': {
     id: 'FS-pavimenti',
     title: 'Pavimenti',
@@ -268,6 +255,23 @@ export const dataFullStack: Record<TProjectId, TProject> = {
       links: [
         ['Github', 'https://github.com/andresnavag93/giffy'],
         ['Web', 'https://giffy-pi.vercel.app/'],
+      ],
+    },
+  },
+  'FS-google-clone': {
+    id: 'FS-google-clone',
+    title: 'Google Clone',
+    subtitle: 'Website',
+    image: '/images/fullstack/google-clone.png',
+    area: { name: 'Front-End', color: 'blue' },
+    date: '2023',
+    features: {
+      classification: 'Website',
+      description: `Replica of the google home page for practicing HTML and CSS.`,
+      technologies: ['HTML', 'Javascript', 'CSS'],
+      links: [
+        ['Github', 'https://github.com/andresnavag93/google-clone'],
+        ['Web', 'https://andresnavag93.github.io/google-clone/'],
       ],
     },
   },
