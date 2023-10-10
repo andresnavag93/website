@@ -3,12 +3,12 @@
 </p>
 
 <h1 align="center">
-  Andres Navarro Portfolio
+  Andres Navarro Portfolio (First Version)
 </h1>
 
 <p align="center">
-  <a href="https://andresnavag93.vercel.app/" target="_blank">
-    https://andresnavag93.vercel.app/
+  <a href="https://andresnavarro-website.vercel.app/" target="_blank">
+    https://andresnavarro-website.vercel.app/
   </a>
 </p>
 
